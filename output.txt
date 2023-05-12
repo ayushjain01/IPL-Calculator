@@ -1,0 +1,961 @@
+
+
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  4  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  | LSG  | 14  |  7  |  6  |  1   |  0.344  |  15   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+KKR  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  8  |  5  |  1   |  0.493  |  17   |
+|  3  | KKR  | 14  |  7  |  7  |  0   | -0.257  |  14   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+KKR  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  8  |  5  |  1   |  0.493  |  17   |
+|  3  | KKR  | 14  |  7  |  7  |  0   | -0.257  |  14   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  8  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  9  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  4  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  | LSG  | 14  |  7  |  6  |  1   |  0.344  |  15   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  8  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  9  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  4  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  8  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  9  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  | LSG  | 14  |  7  |  6  |  1   |  0.344  |  15   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+KKR  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  2  | CSK  | 14  |  8  |  5  |  1   |  0.493  |  17   |
+|  3  | KKR  | 14  |  7  |  7  |  0   | -0.257  |  14   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  7  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  8  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+KKR  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  2  | CSK  | 14  |  8  |  5  |  1   |  0.493  |  17   |
+|  3  | KKR  | 14  |  7  |  7  |  0   | -0.257  |  14   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  7  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  8  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  9  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  6  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  7  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  6  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  7  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  3  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+|  9  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+| 10  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  3  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  6  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  7  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  8  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+|  9  | PBKS | 14  |  6  |  8  |  0   | -0.491  |  12   |
+| 10  |  DC  | 14  |  6  |  8  |  0   | -0.555  |  12   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  3  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | SRH  | 14  |  7  |  7  |  0   | -0.372  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | LSG  | 14  |  5  |  8  |  1   |  0.144  |  11   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ MI  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  MI  | 14  |  9  |  5  |  0   | -0.105  |  18   |
+|  3  |  GT  | 14  |  8  |  6  |  0   |  0.801  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+LSG  wins - SRH  VS LSG
+PBKS wins -  DC  VS PBKS
+RCB  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+SRH  wins -  GT  VS SRH
+ MI  wins - LSG  VS  MI
+ DC  wins - PBKS VS  DC
+SRH  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  2  |  GT  | 14  |  9  |  5  |  0   |  0.901  |  18   |
+|  3  |  MI  | 14  |  8  |  6  |  0   | -0.205  |  16   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  6  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  7  |  RR  | 14  |  6  |  8  |  0   |  0.533  |  12   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  6  |  8  |  0   | -0.472  |  12   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
+>>>Y
+RCB WILL QUALIFY IF -
+ GT  wins -  MI  VS  GT
+SRH  wins - SRH  VS LSG
+ DC  wins -  DC  VS PBKS
+ RR  wins -  RR  VS RCB
+CSK  wins - CSK  VS KKR
+ GT  wins -  GT  VS SRH
+LSG  wins - LSG  VS  MI
+PBKS wins - PBKS VS  DC
+RCB  wins - SRH  VS RCB
+PBKS wins - PBKS VS  RR
+CSK  wins -  DC  VS CSK
+KKR  wins - KKR  VS LSG
+ MI  wins -  MI  VS SRH
+RCB  wins - RCB  VS  GT
+POINTS TABLE AFTER RCB QUALIFIES -
+|-------------------------------------------------------|
+| POS | TEAM |  P  |  W  |  L  |  NR  |   NNR   |  PTS  |
+|-------------------------------------------------------|
+|  1  |  GT  | 14  | 10  |  4  |  0   |  1.001  |  20   |
+|  2  | CSK  | 14  |  9  |  4  |  1   |  0.593  |  19   |
+|  3  |  RR  | 14  |  7  |  7  |  0   |  0.633  |  14   |
+|  4  | RCB  | 14  |  7  |  7  |  0   | -0.295  |  14   |
+|  5  |  MI  | 14  |  7  |  7  |  0   | -0.305  |  14   |
+|  6  | PBKS | 14  |  7  |  7  |  0   | -0.391  |  14   |
+|  7  | LSG  | 14  |  6  |  7  |  1   |  0.244  |  13   |
+|  8  | KKR  | 14  |  6  |  8  |  0   | -0.357  |  12   |
+|  9  | SRH  | 14  |  5  |  9  |  0   | -0.572  |  10   |
+| 10  |  DC  | 14  |  5  |  9  |  0   | -0.655  |  10   |
+|-------------------------------------------------------|
+NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY
+ENTER Y IF YOU WANT TO CONTINUE :
