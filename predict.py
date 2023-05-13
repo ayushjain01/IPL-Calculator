@@ -6,8 +6,8 @@ from sklearn.preprocessing import LabelEncoder
 label_encoder = LabelEncoder()
 
 # Load the previous match data and the new match data
-previous_matches = pd.read_csv('ipl_matches.csv')
-new_matches = pd.read_csv('ipl_fixtures.csv')
+previous_matches = pd.read_csv('data\ipl_matches.csv')
+new_matches = pd.read_csv('data\ipl_fixtures.csv')
 
 # Fit the label encoder on the 'venue' column of the previous matches data
 label_encoder.fit(previous_matches['venue'])

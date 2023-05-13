@@ -68,7 +68,7 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
 options.add_argument("--window-size=1920,1200")
-DRIVER_PATH = "C:\webdriver\chromedriver.exe"
+DRIVER_PATH = "webdriver\chromedriver.exe"
 driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
 url1 = 'https://www.iplt20.com/matches/results/2022'
 url2 = 'https://www.iplt20.com/matches/results/2023'
@@ -79,4 +79,4 @@ get_data(url1,2022,data)
 get_data(url2,2023,data)
 df = pd.DataFrame(data, columns=['match', 'venue', 'date', 'time', 'team1', 'team1_score', 'team1_wickets','team1_overs','team2','team2_score','team2_wickets','team2_overs',"winner","year"])
 
-df.to_csv('ipl_matches.csv', index=False)
+df.to_csv('data\ipl_matches.csv', index=False)

@@ -8,7 +8,7 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
 options.add_argument("--window-size=1920,1200")
-DRIVER_PATH = "C:\webdriver\chromedriver.exe"
+DRIVER_PATH = "webdriver\chromedriver.exe"
 driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
 url = 'https://www.iplt20.com/matches/points-table'
 driver.get(url)

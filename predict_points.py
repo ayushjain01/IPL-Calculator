@@ -1,7 +1,7 @@
 import pandas as pd
 
 def reset_table():
-    table = [['GT', 11, 8, 3, 0, 0.951, 16], ['CSK', 12, 7, 4, 1, 0.493, 15], ['RR', 12, 6, 6, 0, 0.633, 12], ['MI', 11, 6, 5, 0, -0.255, 12], ['LSG', 11, 5, 5, 1, 0.294, 11], ['RCB', 11, 5, 6, 0, -0.345, 10], ['KKR', 12, 5, 7, 0, -0.357, 10], ['PBKS', 11, 5, 6, 0, -0.441, 10], ['SRH', 10, 4, 6, 0, -0.472, 8], ['DC', 11, 4, 7, 0, -0.605, 8]]
+    table = [['GT', 12, 8, 4, 0, 0.761, 16], ['CSK', 12, 7, 4, 1, 0.493, 15], ['MI', 12, 7, 5, 0, -0.117, 14], ['RR', 12, 6, 6, 0, 0.633, 12], ['LSG', 11, 5, 5, 1, 0.294, 11], ['RCB', 11, 5, 6, 0, -0.345, 10], ['KKR', 12, 5, 7, 0, -0.357, 10], ['PBKS', 11, 5, 6, 0, -0.441, 10], ['SRH', 10, 4, 6, 0, -0.472, 8], ['DC', 11, 4, 7, 0, -0.605, 8]]
     return table
 
 def make_dict(table):
@@ -79,7 +79,7 @@ def rcb_wins(teams1, teams2, wins):
 table = reset_table()
 print("CUREENT STANDINGS - ")
 print_table(table)
-df = pd.read_csv('ipl_fixtures.csv')
+df = pd.read_csv('data\ipl_fixtures.csv')
 teams1 = list(df["team1"])
 teams2 = list(df["team2"])
 wins,loses = winners(teams1,teams2)

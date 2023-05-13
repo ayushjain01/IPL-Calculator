@@ -2,3 +2,5 @@ pandas
 selenium
 pyautogui
 sklearn
+virtualenv
+django
