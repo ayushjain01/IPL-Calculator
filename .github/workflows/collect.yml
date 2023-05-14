@@ -25,6 +25,7 @@ jobs:
           python-version: '3.x'
       - name: install dependencies    # install requirements to execute the script
         run: |
+          pip install --upgrade pip
           pip install -r requirements.txt
       - name: execute py script   # run points_table.py to execute the script
         run: python points_table.py

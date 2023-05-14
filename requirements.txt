@@ -1,7 +1,6 @@
 pandas
 selenium
 pyautogui
-sklearn
 asyncio
 pyppeteer2
 beautifulsoup4
