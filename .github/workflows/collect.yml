@@ -3,7 +3,7 @@ name: collect
 #Runs At 10:00 on everyday of May
 on:
   schedule:
-    - cron: "* * * * *"   
+    - cron: "0 10,21 1-21 5 *"   
     #Use https://crontab.guru/ for cron schedule expression
 
 #steps to carry out 
