@@ -1,5 +1,5 @@
 # Name of workflow
-name: CollectData
+name: collect
 #Runs At 10:00 on everyday of May
 on:
   schedule:
