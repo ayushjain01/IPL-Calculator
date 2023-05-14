@@ -34,27 +34,27 @@
     <h1>Calculate Chances</h1>
     <hr>
     <div class="container">
-    <p for="teams">Choose a team:</p>
-<select id="teams" name="teams">
-  <option value="GT">GT</option>
-  <option value="CSK">CSK</option>
-  <option value="MI">MI</option>
-  <option value="LSG">LSG</option>
-  <option value="RCB">RCB</option>
-  <option value="KKR">KKR</option>
-  <option value="PBKS">PBKS</option>
-  <option value="DC">DC</option>
-  <option value="SRH">SRH</option>
-  </select>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <p for="iterations">Choose number of iterations:</p>
-    <select id="iterations" name="iterations">
-      
-</select>
-</div>
-<div class="button-container">
-    <button id = "calc-button"class="button">Calculate Chances</button>
-</div>
+        <p for="teams">Choose a team:</p>
+        <select id="teams" name="teams">
+            <option value="GT">GT</option>
+            <option value="CSK">CSK</option>
+            <option value="MI">MI</option>
+            <option value="LSG">LSG</option>
+            <option value="RCB">RCB</option>
+            <option value="KKR">KKR</option>
+            <option value="PBKS">PBKS</option>
+            <option value="DC">DC</option>
+            <option value="SRH">SRH</option>
+        </select>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <p for="iterations">Choose number of iterations:</p>
+        <select id="iterations" name="iterations">
+
+        </select>
+    </div>
+    <div class="button-container">
+        <button id="calc-button" class="button">Calculate Chances</button>
+    </div>
     <py-config type="toml">
         packages = ["pandas"]
         [[fetch]]
@@ -75,7 +75,8 @@
 
 </body>
 <footer>
-    <p><a href = "index.html">Home</a>
+    <p><a href="index.html">Home</a>
     <p>Check out my <a href="https://github.com/ayushjain01/IPL-Calculator">GitHub repository</a></p>
 </footer>
+
 </html>

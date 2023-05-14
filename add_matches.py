@@ -10,11 +10,15 @@ gamesW = list(df2["W"])
 gamesL = list(df2["L"])
 gamesNR = list(df2["NR"])
 nrr = list(df2["NRR"])
-pts = list(df2["PTS"]) 
+pts = list(df2["PTS"])
 
 html = ""
-colors = {"RCB":"#D5152C","GT":"#1C2234","SRH":"#E34633","CSK":"#FFD230","DC":"#32579D","KKR":"#3D245D","LSG":"#2956C9","MI":"#285290","RR":"#264AA5","PBKS":"#DD212E"}
-fcolors = {"RCB":"#000000","GT":"#ffffff","SRH":"#000000","CSK":"#000000","DC":"#ffffff","KKR":"#ffffff","LSG":"#000000","MI":"#ffffff","RR":"#ffffff","PBKS":"#000000"}
+colors = {"RCB": "#D5152C", "GT": "#1C2234", "SRH": "#E34633", "CSK": "#FFD230", "DC": "#32579D",
+          "KKR": "#3D245D", "LSG": "#2956C9", "MI": "#285290", "RR": "#264AA5", "PBKS": "#DD212E"}
+fcolors = {"RCB": "#000000", "GT": "#ffffff", "SRH": "#000000", "CSK": "#000000", "DC": "#ffffff",
+           "KKR": "#ffffff", "LSG": "#000000", "MI": "#ffffff", "RR": "#ffffff", "PBKS": "#000000"}
+
+
 def sort_values(values):
     for ind in range(len(values)):
         min_index = ind
@@ -29,11 +33,12 @@ def sort_values(values):
         (values[ind], values[min_index]) = (values[min_index], values[ind])
     values.reverse()
 
+
 def handle_click(event):
     global team
     global buttons
     global fcolors
-    
+
     df2 = pd.read_csv(r'data/points.csv')
     team = list(df2["TEAM"])
     gamesP = list(df2["P"])
@@ -42,9 +47,9 @@ def handle_click(event):
     gamesNR = list(df2["NR"])
     nrr = list(df2["NRR"])
     pts = list(df2["PTS"])
-    match,win,lose = event.target.title.split(" | ")
+    match, win, lose = event.target.title.split(" | ")
     for button in buttons:
-        print(button.style.backgroundColor )
+        print(button.style.backgroundColor)
         if button.title == event.target.title:
             button.style.backgroundColor = colors[win]
             button.children[1].style.color = fcolors[win]
@@ -52,30 +57,29 @@ def handle_click(event):
             button.style.backgroundColor = "#ffffff"
             button.children[1].style.color = "#000000"
 
-
-    score[match] = [win,lose]
+    score[match] = [win, lose]
     print(score)
     winners = []
     losers = []
-    for i,j in score.values():
+    for i, j in score.values():
         winners.append(i)
         losers.append(j)
     for m in score.keys():
         win = score[m][0]
         lose = score[m][1]
-        print(m,win,lose)
+        print(m, win, lose)
         win_ind = team.index(win)
         lose_ind = team.index(lose)
         gamesP[win_ind] += 1
         gamesW[win_ind] += 1
-        nrr[win_ind] = round(nrr[win_ind]+0.05,3)
+        nrr[win_ind] = round(nrr[win_ind]+0.05, 3)
         pts[win_ind] += 2
         gamesP[lose_ind] += 1
         gamesL[lose_ind] += 1
-        nrr[lose_ind] = round(nrr[lose_ind]-0.05,3)
+        nrr[lose_ind] = round(nrr[lose_ind]-0.05, 3)
     table = []
-    #Team    P  W  L  NR   NRR  PTS
-    #['GT', 11, 8, 3, 0, 0.951, 16]
+    # Team    P  W  L  NR   NRR  PTS
+    # ['GT', 11, 8, 3, 0, 0.951, 16]
     for k in range(len(team)):
         table_row = []
         table_row.append(team[k])
@@ -84,7 +88,7 @@ def handle_click(event):
         table_row.append(gamesL[k])
         table_row.append(gamesNR[k])
         table_row.append(nrr[k])
-        table_row.append(pts[k]) 
+        table_row.append(pts[k])
         table.append(table_row)
     sort_values(table)
     row = ""

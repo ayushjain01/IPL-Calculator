@@ -6,7 +6,8 @@ gamesW = list(df["W"])
 gamesL = list(df["L"])
 gamesNR = list(df["NR"])
 nrr = list(df["NRR"])
-pts = list(df["PTS"]) 
+pts = list(df["PTS"])
+
 
 def reset_table():
     df = pd.read_csv(r'data/points.csv')
@@ -16,8 +17,8 @@ def reset_table():
     gamesL = list(df["L"])
     gamesNR = list(df["NR"])
     nrr = list(df["NRR"])
-    pts = list(df["PTS"]) 
-    table= []
+    pts = list(df["PTS"])
+    table = []
     for i in range(len(team)):
         data = []
         data.append(team[i])
@@ -30,11 +31,13 @@ def reset_table():
         table.append(data)
     return table
 
+
 def make_dict(table):
     table_dict = {}
     for i in table:
         table_dict[i[0]] = i
     return table_dict
+
 
 def sort_values(values):
     for ind in range(len(values)):
@@ -57,18 +60,20 @@ def print_table(table):
     print("|-------------------------------------------------------|")
     count = 1
     for i in table:
-        print(f"|{count : ^5}|{i[0] : ^6}|{i[1] : ^5}|{i[2] : ^5}|{i[3] : ^5}|{i[4] : ^6}|{i[5] : ^9.3f}|{i[6] : ^7}|")
+        print(
+            f"|{count : ^5}|{i[0] : ^6}|{i[1] : ^5}|{i[2] : ^5}|{i[3] : ^5}|{i[4] : ^6}|{i[5] : ^9.3f}|{i[6] : ^7}|")
         count += 1
     print("|-------------------------------------------------------|")
 
-def winners(teams1,teams2):
+
+def winners(teams1, teams2):
     possible_winners = []
     possible_losers = []
     for i in range(2**len(teams1)):
         winner = []
         loser = []
         for j in range(len(teams1)):
-            if i & (1<<j):
+            if i & (1 << j):
                 winner.append(teams2[j])
                 loser.append(teams1[j])
             else:
@@ -78,14 +83,15 @@ def winners(teams1,teams2):
         possible_losers.append(loser)
     return possible_winners, possible_losers
 
-def assign_points(wins,loses,table_dict):
+
+def assign_points(wins, loses, table_dict):
     for i in range(len(wins)):
-        #Team    P  W  L  NR   NRR  PTS
-        #['GT', 11, 8, 3, 0, 0.951, 16]
+        # Team    P  W  L  NR   NRR  PTS
+        # ['GT', 11, 8, 3, 0, 0.951, 16]
         #  0     1  2  3  4    5     6
         win_team = list(table_dict[wins[i]])
         lose_time = list(table_dict[loses[i]])
-        win_team[1] += 1                    
+        win_team[1] += 1
         win_team[2] += 1
         win_team[5] += 0.05    # avg nrr improvement after winning = +0.05
         win_team[6] += 2
@@ -97,6 +103,7 @@ def assign_points(wins,loses,table_dict):
         table = list(table_dict.values())
     return table
 
+
 def rcb_wins(teams1, teams2, wins):
     print("RCB WILL QUALIFY IF - ")
     for i in range(len(wins)):
@@ -107,24 +114,27 @@ def handle_click(event):
     global ch
     team_name = Element("teams").element.value
     iterations = Element("iterations").element.value
-    print(team_name,iterations)
+    print(team_name, iterations)
     for l in range(len(wins)):
         table = reset_table()
         table_dict = make_dict(table)
-        table = assign_points(wins[l],loses[l],table_dict)
+        table = assign_points(wins[l], loses[l], table_dict)
         sort_values(table)
         top4 = table[:4]
-        
+
         for team in top4:
             if team[0] == team_name:            # printing all tables where RCB qualifies
-                rcb_wins(teams1,teams2,wins[l])
-                print(F"______________________________________________________ITERATION - {ch}______________________________________________________")
+                rcb_wins(teams1, teams2, wins[l])
+                print(
+                    F"______________________________________________________ITERATION - {ch}______________________________________________________")
                 print(f"POINTS TABLE AFTER {team_name} QUALIFIES - ")
                 print_table(table)
-                print("NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY")
+                print(
+                    "NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY")
                 ch = ch + 1
                 if ch == int(iterations):
                     exit(0)
+
 
 ch = 0
 table = reset_table()
@@ -133,10 +143,10 @@ print_table(table)
 df = pd.read_csv(r'data/ipl_fixtures.csv')
 teams1 = list(df["team1"])
 teams2 = list(df["team2"])
-wins,loses = winners(teams1,teams2)
+wins, loses = winners(teams1, teams2)
 html = ""
-for i in range(1,len(wins)):
-    if i>10:
+for i in range(1, len(wins)):
+    if i > 10:
         break
     html = html + f"""
 <option value="{i}">{i}</option>
