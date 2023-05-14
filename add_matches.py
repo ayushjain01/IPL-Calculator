@@ -17,7 +17,7 @@ colors = {"RCB": "#D5152C", "GT": "#1C2234", "SRH": "#E34633", "CSK": "#FFD230",
           "KKR": "#3D245D", "LSG": "#2956C9", "MI": "#285290", "RR": "#264AA5", "PBKS": "#DD212E"}
 fcolors = {"RCB": "#000000", "GT": "#ffffff", "SRH": "#000000", "CSK": "#000000", "DC": "#ffffff",
            "KKR": "#ffffff", "LSG": "#000000", "MI": "#ffffff", "RR": "#ffffff", "PBKS": "#000000"}
-
+match_buttons = {}
 
 def sort_values(values):
     for ind in range(len(values)):
@@ -48,14 +48,20 @@ def handle_click(event):
     nrr = list(df2["NRR"])
     pts = list(df2["PTS"])
     match, win, lose = event.target.title.split(" | ")
+    
     for button in buttons:
-        print(button.style.backgroundColor)
+
         if button.title == event.target.title:
+            match_buttons[match] = (button,win)
             button.style.backgroundColor = colors[win]
             button.children[1].style.color = fcolors[win]
         else:
             button.style.backgroundColor = "#ffffff"
             button.children[1].style.color = "#000000"
+    print(match_buttons)
+    for i in match_buttons.values():
+        i[0].style.backgroundColor = colors[i[1]]
+        i[0].children[1].style.color = fcolors[i[1]]
 
     score[match] = [win, lose]
     print(score)
