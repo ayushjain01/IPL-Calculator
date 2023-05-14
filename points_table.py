@@ -9,6 +9,7 @@ async def main():
     await page.waitFor(3000) 
     html = await page.content()
     await browser.close()
+    print("SCRAPPED ALL DATA")
     return html
 
 html_response = asyncio.get_event_loop().run_until_complete(main())
@@ -31,6 +32,7 @@ for i in rows:
     data.append(record[5])
     data.append(record[6])
     data.append(record[9])
+    print(data)
     table.append(data)
 df = pd.DataFrame(table, columns=['TEAM', 'P', 'W', 'L','NR',"NRR","PTS"])
 df.to_csv('data\points.csv', index=False)

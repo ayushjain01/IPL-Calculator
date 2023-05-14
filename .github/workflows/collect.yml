@@ -2,9 +2,6 @@
 name: CollectData
 #Runs At 10:00 on everyday of May
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "* * * * *"   
     #Use https://crontab.guru/ for cron schedule expression

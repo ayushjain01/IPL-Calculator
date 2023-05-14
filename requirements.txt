@@ -1,5 +1,4 @@
 pandas
-selenium
 pyautogui
 asyncio
 pyppeteer2
