@@ -1,5 +1,4 @@
 import pandas as pd
-import pandas as pd
 df = pd.read_csv(r'data/points.csv')
 team = list(df["TEAM"])
 gamesP = list(df["P"])
