@@ -1,6 +1,4 @@
 match,venue,date,time,team1,team2,year
-MATCH 58,"Rajiv Gandhi International Stadium, Hyderabad","MAY, SAT 13",3:30 pm IST,SRH,LSG,2023
-MATCH 59,"Arun Jaitley Stadium, Delhi","MAY, SAT 13",7:30 pm IST,DC,PBKS,2023
 MATCH 60,"Sawai Mansingh Stadium, Jaipur","MAY, SUN 14",3:30 pm IST,RR,RCB,2023
 MATCH 61,"MA Chidambaram Stadium, Chennai","MAY, SUN 14",7:30 pm IST,CSK,KKR,2023
 MATCH 62,"Narendra Modi Stadium, Ahmedabad","MAY, MON 15",7:30 pm IST,GT,SRH,2023

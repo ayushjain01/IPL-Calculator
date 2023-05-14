@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2023 playoffs or not." />
+    <meta name="keywords"
+        content="IPL, team qualification, predictor, playoffs, 2023, calculator, RCB, CSK, GT, LSG, KKR, PBKS, MI, SRH, DC, RR, Royal Challengers Bangalore, Chennai Super Kings, Gujarat Titans, Lucknow Super Giants, Kolkata Knight Riders, Punjab Kings, Mumbai Indians, Sunrisers Hyderabad, Delhi Capitals, Rajasthan Royals" />
+    <meta name="author" content="Ayush Jain" />
+    <meta property="og:title" content="Will My Team Qualify?" />
+    <meta property="og:description"
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2023 playoffs or not." />
+    <meta property="og:image" content="https://i.ibb.co/89vZy9N/Cover-1.png" />
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+    <meta name="twitter:title" content="Will My Team Qualify?" />
+    <meta name="twitter:description"
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2023 playoffs or not." />
+    <meta name="twitter:image" content="https://i.ibb.co/89vZy9N/Cover-1.png" />
+</head>
+<title>Will My Team Qualify?</title>
+<link rel="stylesheet" href="styles/styles2.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+<script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"
+    data-pyscript-loading-text="Loading, please wait..."></script>
+</head>
+
+<body>
+    <div id="main-content-box">
+        <h1>Upcoming Matches</h1>
+        <p>Select the winning team in each game. The points-table will be updated based on your selection.</p>
+        <hr>
+        <div style="display: flex;">
+            <div id="mainbox">
+            </div>
+            <py-config type="toml">
+                packages = ["pandas"]
+                [[fetch]]
+                from = 'data/'
+                files = ['ipl_fixtures.csv', 'ipl_matches.csv','points.csv']
+                to_folder = 'data'
+                [[fetch]]
+                from = 'static/teams/'
+                files = ['CSK.png', 'DC.png', 'GT.png',
+                'KKR.png','LSG.png','MI.png','PBKS.png','RCB.png','RR.png','SRH.png']
+                to_folder = 'static/teams'
+            </py-config>
+            <py-script src="./add_matches.py"></py-script>
+            <div id="points">
+                <table style="float: right;">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th>TEAM</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>NR</th>
+                            <th>NNR</th>
+                            <th>PTS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="points-table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><a href = "index.html">Home</a>
+        <p>Check out my <a href="https://github.com/ayushjain01/IPL-Calculator">GitHub repository</a></p>
+    </footer>
+</body>
+</html>

@@ -32,7 +32,6 @@ for i in fixture_rows:
     cols.append(teams[match_data[4]])
     cols.append(teams[match_data[5]])
     cols.append(2023)
-    print(cols)
     data.append(cols)
 
 

@@ -1,7 +1,34 @@
 import pandas as pd
+import pandas as pd
+df = pd.read_csv(r'data/points.csv')
+team = list(df["TEAM"])
+gamesP = list(df["P"])
+gamesW = list(df["W"])
+gamesL = list(df["L"])
+gamesNR = list(df["NR"])
+nrr = list(df["NRR"])
+pts = list(df["PTS"]) 
 
 def reset_table():
-    table = [['GT', 12, 8, 4, 0, 0.761, 16], ['CSK', 12, 7, 4, 1, 0.493, 15], ['MI', 12, 7, 5, 0, -0.117, 14], ['RR', 12, 6, 6, 0, 0.633, 12], ['LSG', 11, 5, 5, 1, 0.294, 11], ['RCB', 11, 5, 6, 0, -0.345, 10], ['KKR', 12, 5, 7, 0, -0.357, 10], ['PBKS', 11, 5, 6, 0, -0.441, 10], ['SRH', 10, 4, 6, 0, -0.472, 8], ['DC', 11, 4, 7, 0, -0.605, 8]]
+    df = pd.read_csv(r'data/points.csv')
+    team = list(df["TEAM"])
+    gamesP = list(df["P"])
+    gamesW = list(df["W"])
+    gamesL = list(df["L"])
+    gamesNR = list(df["NR"])
+    nrr = list(df["NRR"])
+    pts = list(df["PTS"]) 
+    table= []
+    for i in range(len(team)):
+        data = []
+        data.append(team[i])
+        data.append(gamesP[i])
+        data.append(gamesW[i])
+        data.append(gamesL[i])
+        data.append(gamesNR[i])
+        data.append(nrr[i])
+        data.append(pts[i])
+        table.append(data)
     return table
 
 def make_dict(table):
@@ -76,27 +103,49 @@ def rcb_wins(teams1, teams2, wins):
     for i in range(len(wins)):
         print(f"{wins[i] : ^4} wins - {teams1[i] : ^4} VS {teams2[i] : ^4}")
 
+
+def handle_click(event):
+    global ch
+    team_name = Element("teams").element.value
+    iterations = Element("iterations").element.value
+    print(team_name,iterations)
+    for l in range(len(wins)):
+        table = reset_table()
+        table_dict = make_dict(table)
+        table = assign_points(wins[l],loses[l],table_dict)
+        sort_values(table)
+        top4 = table[:4]
+        
+        for team in top4:
+            if team[0] == team_name:            # printing all tables where RCB qualifies
+                rcb_wins(teams1,teams2,wins[l])
+                print(F"______________________________________________________ITERATION - {ch}______________________________________________________")
+                print(f"POINTS TABLE AFTER {team_name} QUALIFIES - ")
+                print_table(table)
+                print("NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY")
+                ch = ch + 1
+                if ch == int(iterations):
+                    exit(0)
+
+ch = 0
 table = reset_table()
-print("CUREENT STANDINGS - ")
+print("CURRENT STANDINGS - ")
 print_table(table)
-df = pd.read_csv('data\ipl_fixtures.csv')
+df = pd.read_csv(r'data/ipl_fixtures.csv')
 teams1 = list(df["team1"])
 teams2 = list(df["team2"])
 wins,loses = winners(teams1,teams2)
-for l in range(len(wins)):
-    table = reset_table()
-    table_dict = make_dict(table)
-    table = assign_points(wins[l],loses[l],table_dict)
-    sort_values(table)
-    top4 = table[:4]
-    for team in top4:
-        if team[0] == "RCB":            # printing all tables where RCB qualifies
-            rcb_wins(teams1,teams2,wins[l])
-            print("POINTS TABLE AFTER RCB QUALIFIES - ")
-            print_table(table)
-            print("NOTE THAT THE RESULTS CAN CHANGE BASED ON THE NRR, THIS PROGRAM ASSUMES THE CHANGE IN NRR TO BE +- 0.05 ONLY")
-            print("ENTER Y IF YOU WANT TO CONTINUE : ")
-            ch = input(">>>")
-            if ch != "Y":
-                exit(0)
-print("EXECUTION COMPLETED")
+html = ""
+for i in range(1,len(wins)):
+    if i>10:
+        break
+    html = html + f"""
+<option value="{i}">{i}</option>
+"""
+iterationsmenu = Element("iterations")
+iterationsmenu.element.innerHTML = html
+
+buttons = document.querySelectorAll("#calc-button")
+for button in buttons:
+    print(button)
+    button.onclick = handle_click

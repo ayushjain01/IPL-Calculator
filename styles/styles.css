@@ -1,0 +1,463 @@
+body {
+    background-color: #001030;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #001030;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: white;
+    padding: 2px;
+  }
+
+  p {
+    font-size: 20px;
+    color: white;
+    padding: 1px;
+
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .button {
+    background-color: #256CFF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .button:hover {
+    background-color: #0d4ecf;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+      }
+    
+      p {
+        font-size: 15px;
+      }
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    img {
+        width:100px;
+      margin-right: 0;
+      margin-left: -10px;
+      margin-bottom: -30px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+      }
+
+      
+  }
+  footer {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+a{
+    color:#256CFF;
+    text-decoration: none;
+}
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001030;
+  }
+  table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #001030;
+    color: white;
+  }
+
+  span {
+    color: black;
+}
+/* Default styles */
+#container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-color: #001030;
+}
+
+.container {
+    margin-left: 0;
+}
+
+.matches {
+    background-color: #FFFFFF;
+    padding: 2em;
+    width: 100%; /* Use relative units */
+}
+
+.match-container {
+    display: table;
+    width: 100%;
+}
+
+.match,
+.team {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%; /* Use relative units */
+    text-align: left;
+    padding-left: 1em; /* Use relative units */
+    border: none;
+}
+
+.team-info img {
+    width: 3em; /* Use relative units */
+    height: 3em; /* Use relative units */
+    margin-right: 1em; /* Use relative units */
+}
+
+.team-info span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.matches img {
+    width: 3em; /* Use relative units */
+    height: 3em; /* Use relative units */
+    margin-right: 1em; /* Use relative units */
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .match-container {
+        display: block; /* Change layout to one-column grid */
+    }
+    
+    .match,
+    .team {
+        display: block; /* Change layout to one-column grid */
+    }
+    
+    .table-cell {
+        display: block; /* Change layout to one-column grid */
+        border: none; /* Remove borders */
+        text-align: left; /* Align text to left */
+        padding: 1em 0; /* Use relative units */
+    }
+    
+    .team-info img,
+    .matches img {
+        display: none; /* Hide images */
+    }
+    
+    .team-info span {
+        display: block; /* Change layout to one-column grid */
+        margin-bottom: 1em; /* Use relative units */
+    }
+}
+
+
+
+
+/* py-config - not a component */
+py-config {
+    display: none
+}
+/* py-{el} - components not defined */
+py-script:not(:defined) {
+    display: none
+}
+
+py-repl:not(:defined) {
+    display: none
+}
+
+py-title:not(:defined) {
+    display: none
+}
+
+py-inputbox:not(:defined) {
+    display: none
+}
+
+py-button:not(:defined) {
+    display: none
+}
+
+py-box:not(:defined) {
+    display: none
+}
+.alert-banner {
+    display: none;
+}
+
+.alert-banner p {
+    display: none;
+}
+
+.py-error{
+    display: none;
+}
+
+.py-warning {
+    display: none;
+}
+
+.alert-banner.py-error>#alert-close-button {
+    display: none;
+}
+
+.alert-banner.py-warning>#alert-close-button {
+    display: none;
+}
+
+#alert-close-button {
+display: none;
+}
+
+html {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.spinner::after {
+    content: '';
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(40% - 20px);
+    left: calc(50% - 20px);
+    border-radius: 50%;
+}
+
+.spinner.smooth::after {
+    border-top: 4px solid rgba(255, 255, 255, 1);
+    border-left: 4px solid rgba(255, 255, 255, 1);
+    border-right: 4px solid rgba(255, 255, 255, 0);
+    animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.label {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin-top: 6rem;
+}
+
+/* Pop-up second layer begin */
+
+.py-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#001030;
+    transition: opacity 500ms;
+    visibility: hidden;
+    color: visible;
+    opacity: 1;
+}
+
+.py-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.py-pop-up {
+    text-align: center;
+    width: 600px;
+}
+
+.py-pop-up p {
+    margin: 5px;
+}
+
+.py-pop-up a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 200%;
+    top: 3.5%;
+    right: 5%;
+}
+
+.py-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.py-box div.py-box-child * {
+    max-width: 100%;
+}
+
+.py-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.py-title h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.py-input {
+    padding: 0.5rem;
+    --tw-border-opacity: 1;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 0.25rem;
+    margin-right: 0.75rem;
+    border-style: solid;
+    width: auto;
+}
+
+.py-box input.py-input {
+    width: -webkit-fill-available;
+}
+
+.central-content {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.py-button {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    padding: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.py-li-element p {
+    margin: 5px;
+}
+
+.py-li-element p {
+    display: inline;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/* ===== py-terminal plugin ===== */
+/* XXX: it would be nice if these rules were stored in e.g. pyterminal.css and
+   bundled together at build time (by rollup?) */
+
+.py-terminal {
+    min-height: 10em;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    overflow: auto;
+}
+
+.py-terminal-hidden {
+    display: none;
+}
