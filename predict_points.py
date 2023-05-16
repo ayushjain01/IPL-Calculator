@@ -7,7 +7,19 @@ gamesL = list(df["L"])
 gamesNR = list(df["NR"])
 nrr = list(df["NRR"])
 pts = list(df["PTS"])
-
+scoreF = list(df["FOR"])
+scoreA = list(df["AGAINST"])
+def get_perf(team,scoreF,scoreA):
+    performance = {}
+    for i in range(len(team)):
+        a, b = scoreF[i].split('/')
+        c, d = scoreA[i].split('/')
+        a = int(a)
+        b = round(float(b),1)
+        c = int(c)
+        d = round(float(d) ,1)
+        performance[team[i]] = [a,b,c,d]
+    return performance
 
 def reset_table():
     df = pd.read_csv(r'data/points.csv')
@@ -84,13 +96,19 @@ def winners(teams1, teams2):
     return possible_winners, possible_losers
 
 
-def assign_points(wins, loses, table_dict):
+def assign_points(wins, loses, table_dict,performance):
     for i in range(len(wins)):
         # Team    P  W  L  NR   NRR  PTS
         # ['GT', 11, 8, 3, 0, 0.951, 16]
         #  0     1  2  3  4    5     6
+
         win_team = list(table_dict[wins[i]])
         lose_time = list(table_dict[loses[i]])
+        avg_score_win_for = [performance[wins[i]][0]/win_team[1], performance[wins[i]][1]/win_team[1]]
+        avg_score_win_ag = [performance[wins[i]][2]/win_team[1], performance[wins[i]][3]/win_team[1]]
+        avg_score_lose_for = [performance[loses[i]][0]/lose_time[1], performance[wins[i]][1]/lose_time[1]]
+        avg_score_lose_ag = [performance[wins[i]][2]/lose_time[1], performance[wins[i]][3]/lose_time[1]]
+        print
         win_team[1] += 1
         win_team[2] += 1
         win_team[5] += 0.05    # avg nrr improvement after winning = +0.05
@@ -135,7 +153,7 @@ def handle_click(event):
                 if ch == int(iterations):
                     exit(0)
 
-
+print(get_perf(team,scoreF,scoreA))
 ch = 0
 table = reset_table()
 print("CURRENT STANDINGS - ")

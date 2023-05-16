@@ -34,10 +34,12 @@ for i in rows:
     data.append(record[4])
     data.append(record[5])
     data.append(record[6])
+    data.append(record[7])
+    data.append(record[8])
     data.append(record[9])
     print(data)
     table.append(data)
-df = pd.DataFrame(table, columns=['TEAM', 'P', 'W', 'L', 'NR', "NRR", "PTS"])
+df = pd.DataFrame(table, columns=['TEAM', 'P', 'W', 'L', 'NR', "NRR","FOR","AGAINST", "PTS"])
 df.to_csv('data\points.csv', index=False)
 
 # df = pd.DataFrame(data, columns=['match', 'venue', 'date', 'time', 'team1','team2',"year"])
