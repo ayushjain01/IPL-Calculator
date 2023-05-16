@@ -59,7 +59,7 @@ def get_data(url, year, data):
             cols.append(int(wickets))
             overs = match_data[9].strip("() OV")
             cols.append(float(overs))
-            winner = match_data[4].split(" WON BY ")[0]
+            winner = match_data[3].split(" WON BY ")[0]
             cols.append(replace_team(winner))
 
         cols.append(year)

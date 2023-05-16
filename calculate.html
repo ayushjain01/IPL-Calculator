@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"
-    data-pyscript-loading-text="Loading, please wait..."></script>
+        data-pyscript-loading-text="Loading, please wait..."></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -48,17 +48,48 @@
             <option value="PBKS">PBKS</option>
             <option value="DC">DC</option>
             <option value="SRH">SRH</option>
+            <option value="RR">RR</option>
         </select>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <p for="iterations">Choose number of possibilities:</p>&nbsp; &nbsp;
+        <p for="iterations">Choose number of scenarios:</p>&nbsp; &nbsp;
         <select id="iterations" name="iterations">
-
         </select>
     </div>
-    <div class="button-container">
-        <button id="calc-button" class="button">Calculate Chances</button>
-    </div>
+    <center id="records">
+        <p>Current Standings - </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>POS</th>
+                    <th>TEAM</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>NR</th>
+                    <th>NNR</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody id="points-table">
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button id="calc-button" class="button">Calculate Chances</button>
+        </div>
+        <p style ="font-size: medium;">Note - Results may take a moment to load. Please be patient! Try refreshing the page after every calculation for faster results.😏</p>
+        <br>
+
+        <p id="results" class="title-para" style="display:none;margin-top:-1%;"></p>
+        <center id="copy-content" style="display:none;">
+        </center>
+    </center>
     <py-config type="toml">
+        packages = ["pandas"]
+        [[fetch]]
+        from = 'static/teams/'
+        files = ['CSK.png', 'DC.png', 'GT.png',
+        'KKR.png','LSG.png','MI.png','PBKS.png','RCB.png','RR.png','SRH.png']
+        to_folder = 'static/teams'
         packages = ["pandas"]
         [[fetch]]
         files = ['points_table.py']
@@ -67,15 +98,7 @@
         files = ['ipl_fixtures.csv', 'ipl_matches.csv','points.csv']
         to_folder = 'data'
     </py-config>
-
-    <py-script>
-        import pandas as pd
-        df = pd.read_csv(r'data/ipl_fixtures.csv')
-        teams1 = list(df["team1"])
-        teams2 = list(df["team2"])
-    </py-script>
     <py-script src="./predict_points.py"></py-script>
-
 </body>
 <footer>
     <p><a href="index.html">Home</a>

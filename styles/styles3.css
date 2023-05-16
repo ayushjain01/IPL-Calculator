@@ -74,14 +74,71 @@ option:last-child {
   background-color: #0d4ecf;
 }
 
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  margin: 10px;
+  width: 50%;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff;
+  color: black;
+}
+
+.title-para {
+  font-size: 30px;
+}
+#points {
+  flex: 1;
+  float: right;
+  display: none;
+}
+#scenarios{
+  border-radius: 1.5%;
+  border: 1.5px solid #ffffff;
+  padding: 2%;
+  width:26%;
+}
+
+#scenarios hr {
+  margin-top:5%;
+}
+#scenarios p {
+  text-align: left;
+  margin-left:0%;
+}
+body,html,h1,p,pre {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+}
+#scenarios h1{
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  line-height: 0.5;
+  font-size: 25px;
+}
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 30px;
   }
-
+  #title-para {
+    font-size: 20px;
+  }
   p,
   label {
     font-size: 15px;
+  }
+  #scenarios h1{
+    font-size: 16px;
   }
   .container {
     flex-direction: column;
@@ -373,4 +430,6 @@ textarea {
     color: black;
     padding: 0.5rem;
     overflow: auto;
+    display: none;
+
   }

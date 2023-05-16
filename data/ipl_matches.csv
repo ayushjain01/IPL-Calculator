@@ -1,138 +1,138 @@
 match,venue,date,time,team1,team1_score,team1_wickets,team1_overs,team2,team2_score,team2_wickets,team2_overs,winner,year
 FINAL,"Narendra Modi Stadium, Ahmedabad","MAY, SUN 29",8:00 pm IST,GT,133.0,3.0,18.1,RR,130.0,9.0,20.0,GT,2022
 QUALIFIER 2,"Narendra Modi Stadium, Ahmedabad","MAY, FRI 27",7:30 pm IST,RR,161.0,3.0,18.1,RCB,157.0,8.0,20.0,RR,2022
-ELIMINATOR,"Eden Gardens, Kolkata","MAY, WED 25",7:30 pm IST,LSG,193.0,6.0,20.0,RCB,207.0,4.0,20.0,LSG,2022
+ELIMINATOR,"Eden Gardens, Kolkata","MAY, WED 25",7:30 pm IST,LSG,193.0,6.0,20.0,RCB,207.0,4.0,20.0,RCB,2022
 QUALIFIER 1,"Eden Gardens, Kolkata","MAY, TUE 24",7:30 pm IST,GT,191.0,3.0,19.3,RR,188.0,6.0,20.0,GT,2022
-MATCH 70,"Wankhede Stadium, Mumbai","MAY, SUN 22",7:30 pm IST,SRH,157.0,8.0,20.0,PBKS,160.0,5.0,15.1,SRH,2022
+MATCH 70,"Wankhede Stadium, Mumbai","MAY, SUN 22",7:30 pm IST,SRH,157.0,8.0,20.0,PBKS,160.0,5.0,15.1,PBKS,2022
 MATCH 69,"Wankhede Stadium, Mumbai","MAY, SAT 21",7:30 pm IST,MI,160.0,5.0,19.1,DC,159.0,7.0,20.0,MI,2022
 MATCH 68,"Brabourne - CCI, Mumbai","MAY, FRI 20",7:30 pm IST,RR,151.0,5.0,19.4,CSK,150.0,6.0,20.0,RR,2022
 MATCH 67,"Wankhede Stadium, Mumbai","MAY, THU 19",7:30 pm IST,RCB,170.0,2.0,18.4,GT,168.0,5.0,20.0,RCB,2022
-MATCH 66,"DY Patil Stadium, NAVI MUMBAI","MAY, WED 18",7:30 pm IST,KKR,208.0,8.0,20.0,LSG,210.0,0.0,20.0,KKR,2022
-MATCH 65,"Wankhede Stadium, Mumbai","MAY, TUE 17",7:30 pm IST,MI,190.0,7.0,20.0,SRH,193.0,6.0,20.0,MI,2022
-MATCH 64,"DY Patil Stadium, NAVI MUMBAI","MAY, MON 16",7:30 pm IST,PBKS,142.0,9.0,20.0,DC,159.0,7.0,20.0,PBKS,2022
-MATCH 63,"Brabourne - CCI, Mumbai","MAY, SUN 15",7:30 pm IST,LSG,154.0,8.0,20.0,RR,178.0,6.0,20.0,LSG,2022
-MATCH 62,"Wankhede Stadium, Mumbai","MAY, SUN 15",3:30 pm IST,CSK,133.0,5.0,20.0,GT,137.0,3.0,19.1,CSK,2022
+MATCH 66,"DY Patil Stadium, NAVI MUMBAI","MAY, WED 18",7:30 pm IST,KKR,208.0,8.0,20.0,LSG,210.0,0.0,20.0,LSG,2022
+MATCH 65,"Wankhede Stadium, Mumbai","MAY, TUE 17",7:30 pm IST,MI,190.0,7.0,20.0,SRH,193.0,6.0,20.0,SRH,2022
+MATCH 64,"DY Patil Stadium, NAVI MUMBAI","MAY, MON 16",7:30 pm IST,PBKS,142.0,9.0,20.0,DC,159.0,7.0,20.0,DC,2022
+MATCH 63,"Brabourne - CCI, Mumbai","MAY, SUN 15",7:30 pm IST,LSG,154.0,8.0,20.0,RR,178.0,6.0,20.0,RR,2022
+MATCH 62,"Wankhede Stadium, Mumbai","MAY, SUN 15",3:30 pm IST,CSK,133.0,5.0,20.0,GT,137.0,3.0,19.1,GT,2022
 MATCH 61,"Maharashtra Cricket Association Stadium, Pune","MAY, SAT 14",7:30 pm IST,KKR,177.0,6.0,20.0,SRH,123.0,8.0,20.0,KKR,2022
-MATCH 60,"Brabourne - CCI, Mumbai","MAY, FRI 13",7:30 pm IST,RCB,155.0,9.0,20.0,PBKS,209.0,9.0,20.0,RCB,2022
-MATCH 59,"Wankhede Stadium, Mumbai","MAY, THU 12",7:30 pm IST,CSK,97.0,10.0,16.0,MI,103.0,5.0,14.5,CSK,2022
-MATCH 58,"DY Patil Stadium, NAVI MUMBAI","MAY, WED 11",7:30 pm IST,RR,160.0,6.0,20.0,DC,161.0,2.0,18.1,RR,2022
-MATCH 57,"Maharashtra Cricket Association Stadium, Pune","MAY, TUE 10",7:30 pm IST,LSG,82.0,10.0,13.5,GT,144.0,4.0,20.0,LSG,2022
-MATCH 56,"DY Patil Stadium, NAVI MUMBAI","MAY, MON 9",7:30 pm IST,MI,113.0,10.0,17.3,KKR,165.0,9.0,20.0,MI,2022
+MATCH 60,"Brabourne - CCI, Mumbai","MAY, FRI 13",7:30 pm IST,RCB,155.0,9.0,20.0,PBKS,209.0,9.0,20.0,PBKS,2022
+MATCH 59,"Wankhede Stadium, Mumbai","MAY, THU 12",7:30 pm IST,CSK,97.0,10.0,16.0,MI,103.0,5.0,14.5,MI,2022
+MATCH 58,"DY Patil Stadium, NAVI MUMBAI","MAY, WED 11",7:30 pm IST,RR,160.0,6.0,20.0,DC,161.0,2.0,18.1,DC,2022
+MATCH 57,"Maharashtra Cricket Association Stadium, Pune","MAY, TUE 10",7:30 pm IST,LSG,82.0,10.0,13.5,GT,144.0,4.0,20.0,GT,2022
+MATCH 56,"DY Patil Stadium, NAVI MUMBAI","MAY, MON 9",7:30 pm IST,MI,113.0,10.0,17.3,KKR,165.0,9.0,20.0,KKR,2022
 MATCH 55,"DY Patil Stadium, NAVI MUMBAI","MAY, SUN 8",7:30 pm IST,CSK,208.0,6.0,20.0,DC,117.0,10.0,17.4,CSK,2022
-MATCH 54,"Wankhede Stadium, Mumbai","MAY, SUN 8",3:30 pm IST,SRH,125.0,10.0,19.2,RCB,192.0,3.0,20.0,SRH,2022
+MATCH 54,"Wankhede Stadium, Mumbai","MAY, SUN 8",3:30 pm IST,SRH,125.0,10.0,19.2,RCB,192.0,3.0,20.0,RCB,2022
 MATCH 53,"Maharashtra Cricket Association Stadium, Pune","MAY, SAT 7",7:30 pm IST,LSG,176.0,7.0,20.0,KKR,101.0,10.0,14.3,LSG,2022
-MATCH 52,"Wankhede Stadium, Mumbai","MAY, SAT 7",3:30 pm IST,PBKS,189.0,5.0,20.0,RR,190.0,4.0,19.4,PBKS,2022
-MATCH 51,"Brabourne - CCI, Mumbai","MAY, FRI 6",7:30 pm IST,GT,172.0,5.0,20.0,MI,177.0,6.0,20.0,GT,2022
+MATCH 52,"Wankhede Stadium, Mumbai","MAY, SAT 7",3:30 pm IST,PBKS,189.0,5.0,20.0,RR,190.0,4.0,19.4,RR,2022
+MATCH 51,"Brabourne - CCI, Mumbai","MAY, FRI 6",7:30 pm IST,GT,172.0,5.0,20.0,MI,177.0,6.0,20.0,MI,2022
 MATCH 50,"Brabourne - CCI, Mumbai","MAY, THU 5",7:30 pm IST,DC,207.0,3.0,20.0,SRH,186.0,8.0,20.0,DC,2022
 MATCH 49,"Maharashtra Cricket Association Stadium, Pune","MAY, WED 4",7:30 pm IST,RCB,173.0,8.0,20.0,CSK,160.0,8.0,20.0,RCB,2022
-MATCH 48,"DY Patil Stadium, NAVI MUMBAI","MAY, TUE 3",7:30 pm IST,GT,143.0,8.0,20.0,PBKS,145.0,2.0,16.0,GT,2022
+MATCH 48,"DY Patil Stadium, NAVI MUMBAI","MAY, TUE 3",7:30 pm IST,GT,143.0,8.0,20.0,PBKS,145.0,2.0,16.0,PBKS,2022
 MATCH 47,"Wankhede Stadium, Mumbai","MAY, MON 2",7:30 pm IST,KKR,158.0,3.0,19.1,RR,152.0,5.0,20.0,KKR,2022
-MATCH 46,"Maharashtra Cricket Association Stadium, Pune","MAY, SUN 1",7:30 pm IST,SRH,189.0,6.0,20.0,CSK,202.0,2.0,20.0,SRH,2022
-MATCH 45,"Wankhede Stadium, Mumbai","MAY, SUN 1",3:30 pm IST,DC,189.0,7.0,20.0,LSG,195.0,3.0,20.0,DC,2022
-MATCH 44,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 30",7:30 pm IST,RR,158.0,6.0,20.0,MI,161.0,5.0,19.2,RR,2022
+MATCH 46,"Maharashtra Cricket Association Stadium, Pune","MAY, SUN 1",7:30 pm IST,SRH,189.0,6.0,20.0,CSK,202.0,2.0,20.0,CSK,2022
+MATCH 45,"Wankhede Stadium, Mumbai","MAY, SUN 1",3:30 pm IST,DC,189.0,7.0,20.0,LSG,195.0,3.0,20.0,LSG,2022
+MATCH 44,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 30",7:30 pm IST,RR,158.0,6.0,20.0,MI,161.0,5.0,19.2,MI,2022
 MATCH 43,"Brabourne - CCI, Mumbai","APR, SAT 30",3:30 pm IST,GT,174.0,4.0,19.3,RCB,170.0,6.0,20.0,GT,2022
-MATCH 42,"Maharashtra Cricket Association Stadium, Pune","APR, FRI 29",7:30 pm IST,PBKS,133.0,8.0,20.0,LSG,153.0,8.0,20.0,PBKS,2022
+MATCH 42,"Maharashtra Cricket Association Stadium, Pune","APR, FRI 29",7:30 pm IST,PBKS,133.0,8.0,20.0,LSG,153.0,8.0,20.0,LSG,2022
 MATCH 41,"Wankhede Stadium, Mumbai","APR, THU 28",7:30 pm IST,DC,150.0,6.0,19.0,KKR,146.0,9.0,20.0,DC,2022
 MATCH 40,"Wankhede Stadium, Mumbai","APR, WED 27",7:30 pm IST,GT,199.0,5.0,20.0,SRH,195.0,6.0,20.0,GT,2022
-MATCH 39,"Maharashtra Cricket Association Stadium, Pune","APR, TUE 26",7:30 pm IST,RCB,115.0,10.0,19.3,RR,144.0,8.0,20.0,RCB,2022
+MATCH 39,"Maharashtra Cricket Association Stadium, Pune","APR, TUE 26",7:30 pm IST,RCB,115.0,10.0,19.3,RR,144.0,8.0,20.0,RR,2022
 MATCH 38,"Wankhede Stadium, Mumbai","APR, MON 25",7:30 pm IST,PBKS,187.0,4.0,20.0,CSK,176.0,6.0,20.0,PBKS,2022
 MATCH 37,"Wankhede Stadium, Mumbai","APR, SUN 24",7:30 pm IST,LSG,168.0,6.0,20.0,MI,132.0,8.0,20.0,LSG,2022
-MATCH 36,"Brabourne - CCI, Mumbai","APR, SAT 23",7:30 pm IST,RCB,68.0,10.0,16.1,SRH,72.0,1.0,8.0,RCB,2022
-MATCH 35,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 23",3:30 pm IST,KKR,148.0,8.0,20.0,GT,156.0,9.0,20.0,KKR,2022
-MATCH 34,"Wankhede Stadium, Mumbai","APR, FRI 22",7:30 pm IST,DC,207.0,8.0,20.0,RR,222.0,2.0,20.0,DC,2022
-MATCH 33,"DY Patil Stadium, NAVI MUMBAI","APR, THU 21",7:30 pm IST,MI,155.0,7.0,20.0,CSK,156.0,7.0,20.0,MI,2022
+MATCH 36,"Brabourne - CCI, Mumbai","APR, SAT 23",7:30 pm IST,RCB,68.0,10.0,16.1,SRH,72.0,1.0,8.0,SRH,2022
+MATCH 35,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 23",3:30 pm IST,KKR,148.0,8.0,20.0,GT,156.0,9.0,20.0,GT,2022
+MATCH 34,"Wankhede Stadium, Mumbai","APR, FRI 22",7:30 pm IST,DC,207.0,8.0,20.0,RR,222.0,2.0,20.0,RR,2022
+MATCH 33,"DY Patil Stadium, NAVI MUMBAI","APR, THU 21",7:30 pm IST,MI,155.0,7.0,20.0,CSK,156.0,7.0,20.0,CSK,2022
 MATCH 32,"Brabourne - CCI, Mumbai","APR, WED 20",7:30 pm IST,DC,119.0,1.0,10.3,PBKS,115.0,10.0,20.0,DC,2022
-MATCH 31,"DY Patil Stadium, NAVI MUMBAI","APR, TUE 19",7:30 pm IST,LSG,163.0,8.0,20.0,RCB,181.0,6.0,20.0,LSG,2022
+MATCH 31,"DY Patil Stadium, NAVI MUMBAI","APR, TUE 19",7:30 pm IST,LSG,163.0,8.0,20.0,RCB,181.0,6.0,20.0,RCB,2022
 MATCH 30,"Brabourne - CCI, Mumbai","APR, MON 18",7:30 pm IST,RR,217.0,5.0,20.0,KKR,210.0,10.0,19.4,RR,2022
 MATCH 29,"Maharashtra Cricket Association Stadium, Pune","APR, SUN 17",7:30 pm IST,GT,170.0,7.0,19.5,CSK,169.0,5.0,20.0,GT,2022
-MATCH 28,"DY Patil Stadium, NAVI MUMBAI","APR, SUN 17",3:30 pm IST,PBKS,151.0,10.0,20.0,SRH,152.0,3.0,18.5,PBKS,2022
-MATCH 27,"Wankhede Stadium, Mumbai","APR, SAT 16",7:30 pm IST,DC,173.0,7.0,20.0,RCB,189.0,5.0,20.0,DC,2022
-MATCH 26,"Brabourne - CCI, Mumbai","APR, SAT 16",3:30 pm IST,MI,181.0,9.0,20.0,LSG,199.0,4.0,20.0,MI,2022
+MATCH 28,"DY Patil Stadium, NAVI MUMBAI","APR, SUN 17",3:30 pm IST,PBKS,151.0,10.0,20.0,SRH,152.0,3.0,18.5,SRH,2022
+MATCH 27,"Wankhede Stadium, Mumbai","APR, SAT 16",7:30 pm IST,DC,173.0,7.0,20.0,RCB,189.0,5.0,20.0,RCB,2022
+MATCH 26,"Brabourne - CCI, Mumbai","APR, SAT 16",3:30 pm IST,MI,181.0,9.0,20.0,LSG,199.0,4.0,20.0,LSG,2022
 MATCH 25,"Brabourne - CCI, Mumbai","APR, FRI 15",7:30 pm IST,SRH,176.0,3.0,17.5,KKR,175.0,8.0,20.0,SRH,2022
-MATCH 24,"DY Patil Stadium, NAVI MUMBAI","APR, THU 14",7:30 pm IST,RR,155.0,9.0,20.0,GT,192.0,4.0,20.0,RR,2022
-MATCH 23,"Maharashtra Cricket Association Stadium, Pune","APR, WED 13",7:30 pm IST,MI,186.0,9.0,20.0,PBKS,198.0,5.0,20.0,MI,2022
+MATCH 24,"DY Patil Stadium, NAVI MUMBAI","APR, THU 14",7:30 pm IST,RR,155.0,9.0,20.0,GT,192.0,4.0,20.0,GT,2022
+MATCH 23,"Maharashtra Cricket Association Stadium, Pune","APR, WED 13",7:30 pm IST,MI,186.0,9.0,20.0,PBKS,198.0,5.0,20.0,PBKS,2022
 MATCH 22,"DY Patil Stadium, NAVI MUMBAI","APR, TUE 12",7:30 pm IST,CSK,216.0,4.0,20.0,RCB,193.0,9.0,20.0,CSK,2022
 MATCH 21,"DY Patil Stadium, NAVI MUMBAI","APR, MON 11",7:30 pm IST,SRH,168.0,2.0,19.1,GT,162.0,7.0,20.0,SRH,2022
 MATCH 20,"Wankhede Stadium, Mumbai","APR, SUN 10",7:30 pm IST,RR,165.0,6.0,20.0,LSG,162.0,8.0,20.0,RR,2022
-MATCH 19,"Brabourne - CCI, Mumbai","APR, SUN 10",3:30 pm IST,KKR,171.0,10.0,19.4,DC,215.0,5.0,20.0,KKR,2022
+MATCH 19,"Brabourne - CCI, Mumbai","APR, SUN 10",3:30 pm IST,KKR,171.0,10.0,19.4,DC,215.0,5.0,20.0,DC,2022
 MATCH 18,"Maharashtra Cricket Association Stadium, Pune","APR, SAT 9",7:30 pm IST,RCB,152.0,3.0,18.3,MI,151.0,6.0,20.0,RCB,2022
-MATCH 17,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 9",3:30 pm IST,CSK,154.0,7.0,20.0,SRH,155.0,2.0,17.4,CSK,2022
-MATCH 16,"Brabourne - CCI, Mumbai","APR, FRI 8",7:30 pm IST,PBKS,189.0,9.0,20.0,GT,190.0,4.0,20.0,PBKS,2022
+MATCH 17,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 9",3:30 pm IST,CSK,154.0,7.0,20.0,SRH,155.0,2.0,17.4,SRH,2022
+MATCH 16,"Brabourne - CCI, Mumbai","APR, FRI 8",7:30 pm IST,PBKS,189.0,9.0,20.0,GT,190.0,4.0,20.0,GT,2022
 MATCH 15,"DY Patil Stadium, NAVI MUMBAI","APR, THU 7",7:30 pm IST,LSG,155.0,4.0,19.4,DC,149.0,3.0,20.0,LSG,2022
 MATCH 14,"Maharashtra Cricket Association Stadium, Pune","APR, WED 6",7:30 pm IST,KKR,162.0,5.0,16.0,MI,161.0,4.0,20.0,KKR,2022
-MATCH 13,"Wankhede Stadium, Mumbai","APR, TUE 5",7:30 pm IST,RR,169.0,3.0,20.0,RCB,173.0,6.0,19.1,RR,2022
-MATCH 12,"DY Patil Stadium, NAVI MUMBAI","APR, MON 4",7:30 pm IST,SRH,157.0,9.0,20.0,LSG,169.0,7.0,20.0,SRH,2022
-MATCH 11,"Brabourne - CCI, Mumbai","APR, SUN 3",7:30 pm IST,CSK,126.0,10.0,18.0,PBKS,180.0,8.0,20.0,CSK,2022
+MATCH 13,"Wankhede Stadium, Mumbai","APR, TUE 5",7:30 pm IST,RR,169.0,3.0,20.0,RCB,173.0,6.0,19.1,RCB,2022
+MATCH 12,"DY Patil Stadium, NAVI MUMBAI","APR, MON 4",7:30 pm IST,SRH,157.0,9.0,20.0,LSG,169.0,7.0,20.0,LSG,2022
+MATCH 11,"Brabourne - CCI, Mumbai","APR, SUN 3",7:30 pm IST,CSK,126.0,10.0,18.0,PBKS,180.0,8.0,20.0,PBKS,2022
 MATCH 10,"Maharashtra Cricket Association Stadium, Pune","APR, SAT 2",7:30 pm IST,GT,171.0,6.0,20.0,DC,157.0,9.0,20.0,GT,2022
-MATCH 9,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 2",3:30 pm IST,MI,170.0,8.0,20.0,RR,193.0,8.0,20.0,MI,2022
+MATCH 9,"DY Patil Stadium, NAVI MUMBAI","APR, SAT 2",3:30 pm IST,MI,170.0,8.0,20.0,RR,193.0,8.0,20.0,RR,2022
 MATCH 8,"Wankhede Stadium, Mumbai","APR, FRI 1",7:30 pm IST,KKR,141.0,4.0,14.3,PBKS,137.0,10.0,18.2,KKR,2022
 MATCH 7,"Brabourne - CCI, Mumbai","MAR, THU 31",7:30 pm IST,LSG,211.0,4.0,19.3,CSK,210.0,7.0,20.0,LSG,2022
 MATCH 6,"DY Patil Stadium, NAVI MUMBAI","MAR, WED 30",7:30 pm IST,RCB,132.0,7.0,19.2,KKR,128.0,10.0,18.5,RCB,2022
-MATCH 5,"Maharashtra Cricket Association Stadium, Pune","MAR, TUE 29",7:30 pm IST,SRH,149.0,7.0,20.0,RR,210.0,6.0,20.0,SRH,2022
+MATCH 5,"Maharashtra Cricket Association Stadium, Pune","MAR, TUE 29",7:30 pm IST,SRH,149.0,7.0,20.0,RR,210.0,6.0,20.0,RR,2022
 MATCH 4,"Wankhede Stadium, Mumbai","MAR, MON 28",7:30 pm IST,GT,161.0,5.0,19.4,LSG,158.0,6.0,20.0,GT,2022
-MATCH 3,"DY Patil Stadium, NAVI MUMBAI","MAR, SUN 27",7:30 pm IST,RCB,205.0,2.0,20.0,PBKS,208.0,5.0,19.0,RCB,2022
+MATCH 3,"DY Patil Stadium, NAVI MUMBAI","MAR, SUN 27",7:30 pm IST,RCB,205.0,2.0,20.0,PBKS,208.0,5.0,19.0,PBKS,2022
 MATCH 2,"Brabourne - CCI, Mumbai","MAR, SUN 27",3:30 pm IST,DC,179.0,6.0,18.2,MI,177.0,5.0,20.0,DC,2022
-MATCH 1,"Wankhede Stadium, Mumbai","MAR, SAT 26",7:30 pm IST,CSK,131.0,5.0,20.0,KKR,133.0,4.0,18.3,CSK,2022
-CHENNAI SUPER KINGS
+MATCH 1,"Wankhede Stadium, Mumbai","MAR, SAT 26",7:30 pm IST,CSK,131.0,5.0,20.0,KKR,133.0,4.0,18.3,KKR,2022
+MATCH 63,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, TUE 16",7:30 pm IST,LSG,177.0,3.0,20.0,MI,172.0,5.0,20.0,LSG,2023
 MATCH 62,"Narendra Modi Stadium, Ahmedabad","MAY, MON 15",7:30 pm IST,GT,188.0,9.0,20.0,SRH,154.0,9.0,20.0,GT,2023
-MATCH 61,"MA Chidambaram Stadium, Chennai","MAY, SUN 14",7:30 pm IST,CSK,114.0,6.0,20.0,KKR,147.0,4.0,18.3,KKR,2023
+MATCH 61,"MA Chidambaram Stadium, Chennai","MAY, SUN 14",7:30 pm IST,CSK,144.0,6.0,20.0,KKR,147.0,4.0,18.3,KKR,2023
 MATCH 60,"Sawai Mansingh Stadium, Jaipur","MAY, SUN 14",3:30 pm IST,RR,59.0,10.0,10.3,RCB,171.0,5.0,20.0,RCB,2023
-MATCH 59,"Arun Jaitley Stadium, Delhi","MAY, SAT 13",7:30 pm IST,DC,136.0,8.0,20.0,PBKS,167.0,7.0,20.0,DC,2023
-MATCH 58,"Rajiv Gandhi International Stadium, Hyderabad","MAY, SAT 13",3:30 pm IST,SRH,182.0,6.0,20.0,LSG,185.0,3.0,19.2,SRH,2023
+MATCH 59,"Arun Jaitley Stadium, Delhi","MAY, SAT 13",7:30 pm IST,DC,136.0,8.0,20.0,PBKS,167.0,7.0,20.0,PBKS,2023
+MATCH 58,"Rajiv Gandhi International Stadium, Hyderabad","MAY, SAT 13",3:30 pm IST,SRH,182.0,6.0,20.0,LSG,185.0,3.0,19.2,LSG,2023
 MATCH 57,"Wankhede Stadium, Mumbai","MAY, FRI 12",7:30 pm IST,MI,218.0,5.0,20.0,GT,191.0,8.0,20.0,MI,2023
-MATCH 56,"Eden Gardens, Kolkata","MAY, THU 11",7:30 pm IST,KKR,149.0,8.0,20.0,RR,151.0,1.0,13.1,KKR,2023
+MATCH 56,"Eden Gardens, Kolkata","MAY, THU 11",7:30 pm IST,KKR,149.0,8.0,20.0,RR,151.0,1.0,13.1,RR,2023
 MATCH 55,"MA Chidambaram Stadium, Chennai","MAY, WED 10",7:30 pm IST,CSK,167.0,8.0,20.0,DC,140.0,8.0,20.0,CSK,2023
 MATCH 54,"Wankhede Stadium, Mumbai","MAY, TUE 9",7:30 pm IST,MI,200.0,4.0,16.3,RCB,199.0,6.0,20.0,MI,2023
 MATCH 53,"Eden Gardens, Kolkata","MAY, MON 8",7:30 pm IST,KKR,182.0,5.0,20.0,PBKS,179.0,7.0,20.0,KKR,2023
-MATCH 52,"Sawai Mansingh Stadium, Jaipur","MAY, SUN 7",7:30 pm IST,RR,214.0,2.0,20.0,SRH,217.0,6.0,20.0,RR,2023
+MATCH 52,"Sawai Mansingh Stadium, Jaipur","MAY, SUN 7",7:30 pm IST,RR,214.0,2.0,20.0,SRH,217.0,6.0,20.0,SRH,2023
 MATCH 51,"Narendra Modi Stadium, Ahmedabad","MAY, SUN 7",3:30 pm IST,GT,227.0,2.0,20.0,LSG,171.0,7.0,20.0,GT,2023
 MATCH 50,"Arun Jaitley Stadium, Delhi","MAY, SAT 6",7:30 pm IST,DC,187.0,3.0,16.4,RCB,181.0,4.0,20.0,DC,2023
 MATCH 49,"MA Chidambaram Stadium, Chennai","MAY, SAT 6",3:30 pm IST,CSK,140.0,4.0,17.4,MI,139.0,8.0,20.0,CSK,2023
-MATCH 48,"Sawai Mansingh Stadium, Jaipur","MAY, FRI 5",7:30 pm IST,RR,118.0,10.0,17.5,GT,119.0,1.0,13.5,RR,2023
-MATCH 47,"Rajiv Gandhi International Stadium, Hyderabad","MAY, THU 4",7:30 pm IST,SRH,166.0,8.0,20.0,KKR,171.0,9.0,20.0,SRH,2023
-MATCH 46,"Punjab Cricket Association IS Bindra Stadium, Mohali","MAY, WED 3",7:30 pm IST,PBKS,214.0,3.0,20.0,MI,216.0,4.0,18.5,PBKS,2023
+MATCH 48,"Sawai Mansingh Stadium, Jaipur","MAY, FRI 5",7:30 pm IST,RR,118.0,10.0,17.5,GT,119.0,1.0,13.5,GT,2023
+MATCH 47,"Rajiv Gandhi International Stadium, Hyderabad","MAY, THU 4",7:30 pm IST,SRH,166.0,8.0,20.0,KKR,171.0,9.0,20.0,KKR,2023
+MATCH 46,"Punjab Cricket Association IS Bindra Stadium, Mohali","MAY, WED 3",7:30 pm IST,PBKS,214.0,3.0,20.0,MI,216.0,4.0,18.5,MI,2023
 MATCH 45,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, WED 3",3:30 pm IST,LSG,,,,CSK,,,,NR,2023
-MATCH 44,"Narendra Modi Stadium, Ahmedabad","MAY, TUE 2",7:30 pm IST,GT,125.0,6.0,20.0,DC,130.0,8.0,20.0,GT,2023
-MATCH 43,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, MON 1",7:30 pm IST,LSG,108.0,10.0,19.5,RCB,126.0,9.0,20.0,LSG,2023
+MATCH 44,"Narendra Modi Stadium, Ahmedabad","MAY, TUE 2",7:30 pm IST,GT,125.0,6.0,20.0,DC,130.0,8.0,20.0,DC,2023
+MATCH 43,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, MON 1",7:30 pm IST,LSG,108.0,10.0,19.5,RCB,126.0,9.0,20.0,RCB,2023
 MATCH 42,"Wankhede Stadium, Mumbai","APR, SUN 30",7:30 pm IST,MI,214.0,4.0,19.3,RR,212.0,7.0,20.0,MI,2023
-MATCH 41,"MA Chidambaram Stadium, Chennai","APR, SUN 30",3:30 pm IST,CSK,200.0,4.0,20.0,PBKS,201.0,6.0,20.0,CSK,2023
-MATCH 40,"Arun Jaitley Stadium, Delhi","APR, SAT 29",7:30 pm IST,DC,188.0,6.0,20.0,SRH,197.0,6.0,20.0,DC,2023
-MATCH 39,"Eden Gardens, Kolkata","APR, SAT 29",3:30 pm IST,KKR,179.0,7.0,20.0,GT,180.0,3.0,17.5,KKR,2023
-MATCH 38,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, FRI 28",7:30 pm IST,PBKS,201.0,10.0,19.5,LSG,257.0,5.0,20.0,PBKS,2023
+MATCH 41,"MA Chidambaram Stadium, Chennai","APR, SUN 30",3:30 pm IST,CSK,200.0,4.0,20.0,PBKS,201.0,6.0,20.0,PBKS,2023
+MATCH 40,"Arun Jaitley Stadium, Delhi","APR, SAT 29",7:30 pm IST,DC,188.0,6.0,20.0,SRH,197.0,6.0,20.0,SRH,2023
+MATCH 39,"Eden Gardens, Kolkata","APR, SAT 29",3:30 pm IST,KKR,179.0,7.0,20.0,GT,180.0,3.0,17.5,GT,2023
+MATCH 38,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, FRI 28",7:30 pm IST,PBKS,201.0,10.0,19.5,LSG,257.0,5.0,20.0,LSG,2023
 MATCH 37,"Sawai Mansingh Stadium, Jaipur","APR, THU 27",7:30 pm IST,RR,202.0,5.0,20.0,CSK,170.0,6.0,20.0,RR,2023
-MATCH 36,"M Chinnaswamy Stadium, Bengaluru","APR, WED 26",7:30 pm IST,RCB,179.0,8.0,20.0,KKR,200.0,5.0,20.0,RCB,2023
+MATCH 36,"M Chinnaswamy Stadium, Bengaluru","APR, WED 26",7:30 pm IST,RCB,179.0,8.0,20.0,KKR,200.0,5.0,20.0,KKR,2023
 MATCH 35,"Narendra Modi Stadium, Ahmedabad","APR, TUE 25",7:30 pm IST,GT,207.0,6.0,20.0,MI,152.0,9.0,20.0,GT,2023
-MATCH 34,"Rajiv Gandhi International Stadium, Hyderabad","APR, MON 24",7:30 pm IST,SRH,137.0,6.0,20.0,DC,144.0,9.0,20.0,SRH,2023
-MATCH 33,"Eden Gardens, Kolkata","APR, SUN 23",7:30 pm IST,KKR,186.0,8.0,20.0,CSK,235.0,4.0,20.0,KKR,2023
+MATCH 34,"Rajiv Gandhi International Stadium, Hyderabad","APR, MON 24",7:30 pm IST,SRH,137.0,6.0,20.0,DC,144.0,9.0,20.0,DC,2023
+MATCH 33,"Eden Gardens, Kolkata","APR, SUN 23",7:30 pm IST,KKR,186.0,8.0,20.0,CSK,235.0,4.0,20.0,CSK,2023
 MATCH 32,"M Chinnaswamy Stadium, Bengaluru","APR, SUN 23",3:30 pm IST,RCB,189.0,9.0,20.0,RR,182.0,6.0,20.0,RCB,2023
-MATCH 31,"Wankhede Stadium, Mumbai","APR, SAT 22",7:30 pm IST,MI,201.0,6.0,20.0,PBKS,214.0,8.0,20.0,MI,2023
-MATCH 30,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 22",3:30 pm IST,LSG,128.0,7.0,20.0,GT,135.0,6.0,20.0,LSG,2023
+MATCH 31,"Wankhede Stadium, Mumbai","APR, SAT 22",7:30 pm IST,MI,201.0,6.0,20.0,PBKS,214.0,8.0,20.0,PBKS,2023
+MATCH 30,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 22",3:30 pm IST,LSG,128.0,7.0,20.0,GT,135.0,6.0,20.0,GT,2023
 MATCH 29,"MA Chidambaram Stadium, Chennai","APR, FRI 21",7:30 pm IST,CSK,138.0,3.0,18.4,SRH,134.0,7.0,20.0,CSK,2023
 MATCH 28,"Arun Jaitley Stadium, Delhi","APR, THU 20",7:30 pm IST,DC,128.0,6.0,19.2,KKR,127.0,10.0,20.0,DC,2023
-MATCH 27,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, THU 20",3:30 pm IST,PBKS,150.0,10.0,18.2,RCB,174.0,4.0,20.0,PBKS,2023
-MATCH 26,"Sawai Mansingh Stadium, Jaipur","APR, WED 19",7:30 pm IST,RR,144.0,6.0,20.0,LSG,154.0,7.0,20.0,RR,2023
-MATCH 25,"Rajiv Gandhi International Stadium, Hyderabad","APR, TUE 18",7:30 pm IST,SRH,178.0,10.0,19.5,MI,192.0,5.0,20.0,SRH,2023
-MATCH 24,"M Chinnaswamy Stadium, Bengaluru","APR, MON 17",7:30 pm IST,RCB,218.0,8.0,20.0,CSK,226.0,6.0,20.0,RCB,2023
-MATCH 23,"Narendra Modi Stadium, Ahmedabad","APR, SUN 16",7:30 pm IST,GT,177.0,7.0,20.0,RR,179.0,7.0,19.2,GT,2023
+MATCH 27,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, THU 20",3:30 pm IST,PBKS,150.0,10.0,18.2,RCB,174.0,4.0,20.0,RCB,2023
+MATCH 26,"Sawai Mansingh Stadium, Jaipur","APR, WED 19",7:30 pm IST,RR,144.0,6.0,20.0,LSG,154.0,7.0,20.0,LSG,2023
+MATCH 25,"Rajiv Gandhi International Stadium, Hyderabad","APR, TUE 18",7:30 pm IST,SRH,178.0,10.0,19.5,MI,192.0,5.0,20.0,MI,2023
+MATCH 24,"M Chinnaswamy Stadium, Bengaluru","APR, MON 17",7:30 pm IST,RCB,218.0,8.0,20.0,CSK,226.0,6.0,20.0,CSK,2023
+MATCH 23,"Narendra Modi Stadium, Ahmedabad","APR, SUN 16",7:30 pm IST,GT,177.0,7.0,20.0,RR,179.0,7.0,19.2,RR,2023
 MATCH 22,"Wankhede Stadium, Mumbai","APR, SUN 16",3:30 pm IST,MI,186.0,5.0,17.4,KKR,185.0,6.0,20.0,MI,2023
-MATCH 21,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 15",7:30 pm IST,LSG,159.0,8.0,20.0,PBKS,161.0,8.0,19.3,LSG,2023
+MATCH 21,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 15",7:30 pm IST,LSG,159.0,8.0,20.0,PBKS,161.0,8.0,19.3,PBKS,2023
 MATCH 20,"M Chinnaswamy Stadium, Bengaluru","APR, SAT 15",3:30 pm IST,RCB,174.0,6.0,20.0,DC,151.0,9.0,20.0,RCB,2023
-MATCH 19,"Eden Gardens, Kolkata","APR, FRI 14",7:30 pm IST,KKR,205.0,7.0,20.0,SRH,228.0,4.0,20.0,KKR,2023
-MATCH 18,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, THU 13",7:30 pm IST,PBKS,153.0,8.0,20.0,GT,154.0,4.0,19.5,PBKS,2023
-MATCH 17,"MA Chidambaram Stadium, Chennai","APR, WED 12",7:30 pm IST,CSK,172.0,6.0,20.0,RR,175.0,8.0,20.0,CSK,2023
-MATCH 16,"Arun Jaitley Stadium, Delhi","APR, TUE 11",7:30 pm IST,DC,172.0,10.0,19.4,MI,173.0,4.0,20.0,DC,2023
-MATCH 15,"M Chinnaswamy Stadium, Bengaluru","APR, MON 10",7:30 pm IST,RCB,212.0,2.0,20.0,LSG,213.0,9.0,20.0,RCB,2023
+MATCH 19,"Eden Gardens, Kolkata","APR, FRI 14",7:30 pm IST,KKR,205.0,7.0,20.0,SRH,228.0,4.0,20.0,SRH,2023
+MATCH 18,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, THU 13",7:30 pm IST,PBKS,153.0,8.0,20.0,GT,154.0,4.0,19.5,GT,2023
+MATCH 17,"MA Chidambaram Stadium, Chennai","APR, WED 12",7:30 pm IST,CSK,172.0,6.0,20.0,RR,175.0,8.0,20.0,RR,2023
+MATCH 16,"Arun Jaitley Stadium, Delhi","APR, TUE 11",7:30 pm IST,DC,172.0,10.0,19.4,MI,173.0,4.0,20.0,MI,2023
+MATCH 15,"M Chinnaswamy Stadium, Bengaluru","APR, MON 10",7:30 pm IST,RCB,212.0,2.0,20.0,LSG,213.0,9.0,20.0,LSG,2023
 MATCH 14,"Rajiv Gandhi International Stadium, Hyderabad","APR, SUN 9",7:30 pm IST,SRH,145.0,2.0,17.1,PBKS,143.0,9.0,20.0,SRH,2023
-MATCH 13,"Narendra Modi Stadium, Ahmedabad","APR, SUN 9",3:30 pm IST,GT,204.0,4.0,20.0,KKR,207.0,7.0,20.0,GT,2023
-MATCH 12,"Wankhede Stadium, Mumbai","APR, SAT 8",7:30 pm IST,MI,157.0,8.0,20.0,CSK,159.0,3.0,18.1,MI,2023
+MATCH 13,"Narendra Modi Stadium, Ahmedabad","APR, SUN 9",3:30 pm IST,GT,204.0,4.0,20.0,KKR,207.0,7.0,20.0,KKR,2023
+MATCH 12,"Wankhede Stadium, Mumbai","APR, SAT 8",7:30 pm IST,MI,157.0,8.0,20.0,CSK,159.0,3.0,18.1,CSK,2023
 MATCH 11,"Barsapara Cricket Stadium, Guwahati","APR, SAT 8",3:30 pm IST,RR,199.0,4.0,20.0,DC,142.0,9.0,20.0,RR,2023
 MATCH 10,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, FRI 7",7:30 pm IST,LSG,127.0,5.0,16.0,SRH,121.0,8.0,20.0,LSG,2023
 MATCH 9,"Eden Gardens, Kolkata","APR, THU 6",7:30 pm IST,KKR,204.0,7.0,20.0,RCB,123.0,10.0,17.4,KKR,2023
-MATCH 8,"Barsapara Cricket Stadium, Guwahati","APR, WED 5",7:30 pm IST,RR,192.0,7.0,20.0,PBKS,197.0,4.0,20.0,RR,2023
-MATCH 7,"Arun Jaitley Stadium, Delhi","APR, TUE 4",7:30 pm IST,DC,162.0,8.0,20.0,GT,163.0,4.0,18.1,DC,2023
+MATCH 8,"Barsapara Cricket Stadium, Guwahati","APR, WED 5",7:30 pm IST,RR,192.0,7.0,20.0,PBKS,197.0,4.0,20.0,PBKS,2023
+MATCH 7,"Arun Jaitley Stadium, Delhi","APR, TUE 4",7:30 pm IST,DC,162.0,8.0,20.0,GT,163.0,4.0,18.1,GT,2023
 MATCH 6,"MA Chidambaram Stadium, Chennai","APR, MON 3",7:30 pm IST,CSK,217.0,7.0,20.0,LSG,205.0,7.0,20.0,CSK,2023
 MATCH 5,"M Chinnaswamy Stadium, Bengaluru","APR, SUN 2",7:30 pm IST,RCB,172.0,2.0,16.2,MI,171.0,7.0,20.0,RCB,2023
-MATCH 4,"Rajiv Gandhi International Stadium, Hyderabad","APR, SUN 2",3:30 pm IST,SRH,131.0,8.0,20.0,RR,203.0,5.0,20.0,SRH,2023
+MATCH 4,"Rajiv Gandhi International Stadium, Hyderabad","APR, SUN 2",3:30 pm IST,SRH,131.0,8.0,20.0,RR,203.0,5.0,20.0,RR,2023
 MATCH 3,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 1",7:30 pm IST,LSG,193.0,6.0,20.0,DC,143.0,9.0,20.0,LSG,2023
 MATCH 2,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, SAT 1",3:30 pm IST,PBKS,191.0,5.0,20.0,KKR,146.0,7.0,16.0,PBKS,2023
 MATCH 1,"Narendra Modi Stadium, Ahmedabad","MAR, FRI 31",7:30 pm IST,GT,182.0,5.0,19.2,CSK,178.0,7.0,20.0,GT,2023

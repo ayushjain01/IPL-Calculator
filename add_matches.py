@@ -23,7 +23,7 @@ match_buttons = {}
 
 
 def fix_overs(no_overs):
-    no_overs = str(round(no_overs,1))
+    no_overs = str(round(no_overs, 1))
     new = no_overs.split(".")
     if int(new[1]) >= 6:
         if new[0] == "19":
@@ -34,7 +34,8 @@ def fix_overs(no_overs):
     else:
         return float(no_overs)
 
-def add_overs(overs1,overs2):
+
+def add_overs(overs1, overs2):
     new = overs1 + overs2
     overs = str(new).split(".")
     if int(overs[1]) >= 6:
@@ -43,7 +44,7 @@ def add_overs(overs1,overs2):
     return float(".".join(overs))
 
 
-def find_scores(avg_score_win_for,avg_score_win_ag,avg_score_lose_for,avg_score_lose_ag):
+def find_scores(avg_score_win_for, avg_score_win_ag, avg_score_lose_for, avg_score_lose_ag):
     win_for_runs = avg_score_win_for[0]
     win_for_overs = avg_score_win_for[1]
     win_ag_runs = avg_score_win_ag[0]
@@ -52,27 +53,29 @@ def find_scores(avg_score_win_for,avg_score_win_ag,avg_score_lose_for,avg_score_
     lose_for_overs = avg_score_lose_for[1]
     lose_ag_runs = avg_score_lose_ag[0]
     lose_ag_overs = avg_score_lose_ag[1]
-    win_score_runs = max(win_for_runs,lose_ag_runs)
-    win_score_overs = max(win_for_overs,lose_ag_overs)
-    lose_score_runs = min(lose_for_runs,win_ag_runs)
-    lose_score_overs = max(lose_for_overs,win_ag_overs)
+    win_score_runs = max(win_for_runs, lose_ag_runs)
+    win_score_overs = max(win_for_overs, lose_ag_overs)
+    lose_score_runs = min(lose_for_runs, win_ag_runs)
+    lose_score_overs = max(lose_for_overs, win_ag_overs)
     if win_score_runs < lose_score_runs:
-        win_score_runs,lose_score_runs = lose_score_runs,win_score_runs
-    return win_score_runs,lose_score_runs,win_score_overs,lose_score_overs
+        win_score_runs, lose_score_runs = lose_score_runs, win_score_runs
+    return win_score_runs, lose_score_runs, win_score_overs, lose_score_overs
 
-def get_perf(team,scoreF,scoreA):
+
+def get_perf(team, scoreF, scoreA):
     performance = {}
     for i in range(len(team)):
         a, b = scoreF[i].split('/')
         c, d = scoreA[i].split('/')
         a = int(a)
-        b = round(float(b),1)
+        b = round(float(b), 1)
         c = int(c)
-        d = round(float(d) ,1)
-        performance[team[i]] = [a,b,c,d]
+        d = round(float(d), 1)
+        performance[team[i]] = [a, b, c, d]
     return performance
 
-def get_nrr(avg_score_for,avg_score_ag):
+
+def get_nrr(avg_score_for, avg_score_ag):
     nrr_for = avg_score_for[0]/avg_score_for[1]
     nrr_ag = avg_score_ag[0]/avg_score_ag[1]
     return (nrr_for - nrr_ag)/10
@@ -108,25 +111,23 @@ def handle_click(event):
     pts = list(df2["PTS"])
     scoreF = list(df2["FOR"])
     scoreA = list(df2["AGAINST"])
-    performance = get_perf(team,scoreF,scoreA)
+    performance = get_perf(team, scoreF, scoreA)
     match, win, lose = event.target.title.split(" | ")
-    
+
     for button in buttons:
 
         if button.title == event.target.title:
-            match_buttons[match] = (button,win)
+            match_buttons[match] = (button, win)
             button.style.backgroundColor = colors[win]
             button.children[1].style.color = fcolors[win]
         else:
             button.style.backgroundColor = "#ffffff"
             button.children[1].style.color = "#000000"
-    print(match_buttons)
     for i in match_buttons.values():
         i[0].style.backgroundColor = colors[i[1]]
         i[0].children[1].style.color = fcolors[i[1]]
 
     score[match] = [win, lose]
-    print(score)
     winners = []
     losers = []
     for i, j in score.values():
@@ -135,25 +136,30 @@ def handle_click(event):
     for m in score.keys():
         win = score[m][0]
         lose = score[m][1]
-        print(m, win, lose)
         win_ind = team.index(win)
         lose_ind = team.index(lose)
-        avg_score_win_for = [round(performance[win][0]/gamesP[win_ind]), fix_overs(performance[win][1]/gamesP[win_ind])]
-        avg_score_win_ag = [round(performance[win][2]/gamesP[win_ind]), fix_overs(performance[win][3]/gamesP[win_ind])]
-        avg_score_lose_for = [round(performance[lose][0]/gamesP[lose_ind]),fix_overs(performance[lose][1]/gamesP[lose_ind])]
-        avg_score_lose_ag = [round(performance[lose][2]/gamesP[lose_ind]), fix_overs(performance[lose][3]/gamesP[lose_ind])]
+        avg_score_win_for = [round(
+            performance[win][0]/gamesP[win_ind]), fix_overs(performance[win][1]/gamesP[win_ind])]
+        avg_score_win_ag = [round(performance[win][2]/gamesP[win_ind]),
+                            fix_overs(performance[win][3]/gamesP[win_ind])]
+        avg_score_lose_for = [round(
+            performance[lose][0]/gamesP[lose_ind]), fix_overs(performance[lose][1]/gamesP[lose_ind])]
+        avg_score_lose_ag = [round(performance[lose][2]/gamesP[lose_ind]),
+                             fix_overs(performance[lose][3]/gamesP[lose_ind])]
 
-        win_score_runs,lose_score_runs,win_score_overs,lose_score_overs = find_scores(avg_score_win_for,avg_score_win_ag,avg_score_lose_for,avg_score_lose_ag)
+        win_score_runs, lose_score_runs, win_score_overs, lose_score_overs = find_scores(
+            avg_score_win_for, avg_score_win_ag, avg_score_lose_for, avg_score_lose_ag)
 
         performance[win][0] += win_score_runs
-        performance[win][1] = add_overs(performance[win][1],win_score_overs)
+        performance[win][1] = add_overs(performance[win][1], win_score_overs)
         performance[lose][2] += win_score_runs
-        performance[lose][3] = add_overs(performance[lose][3],win_score_overs)
+        performance[lose][3] = add_overs(performance[lose][3], win_score_overs)
 
         performance[lose][0] += lose_score_runs
-        performance[lose][1] = add_overs(performance[lose][1],lose_score_overs)
+        performance[lose][1] = add_overs(
+            performance[lose][1], lose_score_overs)
         performance[win][2] += lose_score_runs
-        performance[win][3] = add_overs(performance[win][3],lose_score_overs)
+        performance[win][3] = add_overs(performance[win][3], lose_score_overs)
 
         gamesP[win_ind] += 1
         gamesW[win_ind] += 1
@@ -163,11 +169,11 @@ def handle_click(event):
 
         score_win_for = [performance[win][0], performance[win][1]]
         score_win_ag = [performance[win][2], performance[win][3]]
-        score_lose_for = [performance[lose][0],performance[lose][1]]
+        score_lose_for = [performance[lose][0], performance[lose][1]]
         score_lose_ag = [performance[lose][2], performance[lose][3]]
 
-        win_nrr_new = get_nrr(score_win_for,score_win_ag) 
-        lose_nrr_new = get_nrr(score_lose_for,score_lose_ag)
+        win_nrr_new = get_nrr(score_win_for, score_win_ag)
+        lose_nrr_new = get_nrr(score_lose_for, score_lose_ag)
         if win_nrr_new < 0:
             win_nrr_new *= -1
         if lose_nrr_new > 0:
@@ -175,8 +181,8 @@ def handle_click(event):
 
         nrr[win_ind] += round(win_nrr_new, 3)
         nrr[lose_ind] += round(lose_nrr_new, 3)
-        nrr[win_ind] = round(nrr[win_ind],3)
-        nrr[lose_ind] = round(nrr[lose_ind],3)
+        nrr[win_ind] = round(nrr[win_ind], 3)
+        nrr[lose_ind] = round(nrr[lose_ind], 3)
     table = []
     # Team    P  W  L  NR   NRR  PTS
     # ['GT', 11, 8, 3, 0, 0.951, 16]
@@ -261,9 +267,9 @@ for i in range(len(team)):
 pointsbody = Element("points-table")
 pointsbody.element.innerHTML = row
 
+
 buttons = document.querySelectorAll("#my-team-info")
 for button in buttons:
-    print(button)
     button.onclick = handle_click
 info = document.querySelectorAll(".team-info")
 
