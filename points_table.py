@@ -24,6 +24,7 @@ teams = {"ROYAL CHALLENGERS BANGALORE": "RCB", "GUJARAT TITANS": "GT", "DELHI CA
          "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI"}
 table = []
 for i in rows:
+    qualified = i.find('span', {"class":"standings_qualified ng-scope"})
     data = []
     row_data = i.text.split(" ")
     record = [x for x in row_data if x != ""]
@@ -37,9 +38,13 @@ for i in rows:
     data.append(record[7])
     data.append(record[8])
     data.append(record[9])
+    if qualified != None:
+        data.append("Yes")
+    else:
+        data.append("No")
     print(data)
     table.append(data)
-df = pd.DataFrame(table, columns=['TEAM', 'P', 'W', 'L', 'NR', "NRR","FOR","AGAINST", "PTS"])
+df = pd.DataFrame(table, columns=['TEAM', 'P', 'W', 'L', 'NR', "NRR","FOR","AGAINST", "PTS","QUALIFIED"])
 df.to_csv('data\points.csv', index=False)
 
 # df = pd.DataFrame(data, columns=['match', 'venue', 'date', 'time', 'team1','team2',"year"])
