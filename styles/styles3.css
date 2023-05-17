@@ -127,6 +127,9 @@ body,html,h1,p,pre {
   font-size: 25px;
 }
 @media screen and (max-width: 600px) {
+  #scenarios{
+  width:80%;
+  }
   h1 {
     font-size: 30px;
   }
