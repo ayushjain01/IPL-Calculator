@@ -16,7 +16,7 @@ time.sleep(4)
 fixture_table = driver.find_element(By.ID, "team_archive")
 fixture_rows = fixture_table.find_elements(By.XPATH, ".//li")
 data = []
-teams = {"ROYAL CHALLENGERS BANGALORE": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
+teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
          "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI"}
 
 for i in fixture_rows:

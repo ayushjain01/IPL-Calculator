@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def replace_team(team):
-    teams = {"ROYAL CHALLENGERS BANGALORE": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
+    teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
              "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "NO RESULT": "NR"}
     return teams[team]
 
@@ -77,7 +77,7 @@ driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
 url1 = 'https://www.iplt20.com/matches/results/2022'
 url2 = 'https://www.iplt20.com/matches/results/2023'
 data = []
-teams = {"ROYAL CHALLENGERS BANGALORE": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
+teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
          "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI"}
 
 get_data(url1, 2022, data)
