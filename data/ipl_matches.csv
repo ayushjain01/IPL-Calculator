@@ -73,6 +73,11 @@ MATCH 4,"Wankhede Stadium, Mumbai","MAR, MON 28",7:30 pm IST,GT,161.0,5.0,19.4,L
 MATCH 3,"DY Patil Stadium, NAVI MUMBAI","MAR, SUN 27",7:30 pm IST,RCB,205.0,2.0,20.0,PBKS,208.0,5.0,19.0,PBKS,2022
 MATCH 2,"Brabourne - CCI, Mumbai","MAR, SUN 27",3:30 pm IST,DC,179.0,6.0,18.2,MI,177.0,5.0,20.0,DC,2022
 MATCH 1,"Wankhede Stadium, Mumbai","MAR, SAT 26",7:30 pm IST,CSK,131.0,5.0,20.0,KKR,133.0,4.0,18.3,KKR,2022
+FINAL,"Narendra Modi Stadium, Ahmedabad","MAY, MON 29",7:30 pm IST,CSK,171.0,5.0,15.0,GT,214.0,4.0,20.0,CSK,2023
+QUALIFIER 2,"Narendra Modi Stadium, Ahmedabad","MAY, FRI 26",7:30 pm IST,GT,233.0,3.0,20.0,MI,171.0,10.0,18.2,GT,2023
+ELIMINATOR,"MA Chidambaram Stadium, Chennai","MAY, WED 24",7:30 pm IST,LSG,101.0,10.0,16.3,MI,182.0,8.0,20.0,MI,2023
+QUALIFIER 1,"MA Chidambaram Stadium, Chennai","MAY, TUE 23",7:30 pm IST,GT,157.0,10.0,20.0,CSK,172.0,7.0,20.0,CSK,2023
+MATCH 70,"M Chinnaswamy Stadium, Bengaluru","MAY, SUN 21",7:30 pm IST,RCB,197.0,5.0,20.0,GT,198.0,4.0,19.1,GT,2023
 MATCH 69,"Wankhede Stadium, Mumbai","MAY, SUN 21",3:30 pm IST,MI,201.0,2.0,18.0,SRH,200.0,5.0,20.0,MI,2023
 MATCH 68,"Eden Gardens, Kolkata","MAY, SAT 20",7:30 pm IST,KKR,175.0,7.0,20.0,LSG,176.0,8.0,20.0,LSG,2023
 MATCH 67,"Arun Jaitley Stadium, Delhi","MAY, SAT 20",3:30 pm IST,DC,146.0,9.0,20.0,CSK,223.0,3.0,20.0,CSK,2023
