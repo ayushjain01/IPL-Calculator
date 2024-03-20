@@ -1,11 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+
 import pandas as pd
 
 
 def replace_team(team):
     teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
-             "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "NO RESULT": "NR"}
+             "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "ROYAL CHALLENGERS BANGALORE":"RCB", "NO RESULT": "NR"}
     return teams[team]
 
 
@@ -73,12 +75,14 @@ options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
 options.add_argument("--window-size=1920,1200")
 DRIVER_PATH = "webdriver\chromedriver.exe"
-driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
+service = Service(executable_path=DRIVER_PATH)
+options = webdriver.ChromeOptions()
+driver = webdriver.Chrome(service=service, options=options)
 url1 = 'https://www.iplt20.com/matches/results/2022'
 url2 = 'https://www.iplt20.com/matches/results/2023'
 data = []
 teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
-         "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI"}
+         "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "ROYAL CHALLENGERS BANGALORE":"RCB"}
 
 get_data(url1, 2022, data)
 get_data(url2, 2023, data)

@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+
 import time
 import pandas as pd
 
@@ -9,7 +11,9 @@ options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
 options.add_argument("--window-size=1920,1200")
 DRIVER_PATH = "webdriver\chromedriver.exe"
-driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
+service = Service(executable_path=DRIVER_PATH)
+options = webdriver.ChromeOptions()
+driver = webdriver.Chrome(service=service, options=options)
 url = 'https://www.iplt20.com/matches/fixtures'
 driver.get(url)
 time.sleep(4)
@@ -17,7 +21,7 @@ fixture_table = driver.find_element(By.ID, "team_archive")
 fixture_rows = fixture_table.find_elements(By.XPATH, ".//li")
 data = []
 teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
-         "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI"}
+         "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "ROYAL CHALLENGERS BANGALORE":"RCB"}
 
 for i in fixture_rows:
     cols = []
