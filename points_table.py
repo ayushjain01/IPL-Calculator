@@ -7,7 +7,7 @@ import pandas as pd
 async def main():
     browser = await launch()
     page = await browser.newPage()
-    await page.goto('https://www.iplt20.com/points-table/men/2023')
+    await page.goto('https://www.iplt20.com/points-table/men/2024')
     await page.waitFor(3000)
     html = await page.content()
     await browser.close()

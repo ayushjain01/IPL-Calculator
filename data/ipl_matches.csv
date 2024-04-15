@@ -147,3 +147,33 @@ MATCH 4,"Rajiv Gandhi International Stadium, Hyderabad","APR, SUN 2",3:30 pm IST
 MATCH 3,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 1",7:30 pm IST,LSG,193.0,6.0,20.0,DC,143.0,9.0,20.0,LSG,2023
 MATCH 2,"Punjab Cricket Association IS Bindra Stadium, Mohali","APR, SAT 1",3:30 pm IST,PBKS,191.0,5.0,20.0,KKR,146.0,7.0,16.0,PBKS,2023
 MATCH 1,"Narendra Modi Stadium, Ahmedabad","MAR, FRI 31",7:30 pm IST,GT,182.0,5.0,19.2,CSK,178.0,7.0,20.0,GT,2023
+MATCH 30,"M Chinnaswamy Stadium, Bengaluru","APR, MON 15",7:30 pm IST,RCB,262.0,7.0,20.0,SRH,287.0,3.0,20.0,SRH,2024
+MATCH 29,"Wankhede Stadium, Mumbai","APR, SUN 14",7:30 pm IST,MI,186.0,6.0,20.0,CSK,206.0,4.0,20.0,CSK,2024
+MATCH 28,"Eden Gardens, Kolkata","APR, SUN 14",3:30 pm IST,KKR,162.0,2.0,15.4,LSG,161.0,7.0,20.0,KKR,2024
+MATCH 27,"PCA New Stadium, Mullanpur","APR, SAT 13",7:30 pm IST,PBKS,147.0,8.0,20.0,RR,152.0,7.0,19.5,RR,2024
+MATCH 26,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, FRI 12",7:30 pm IST,LSG,167.0,7.0,20.0,DC,170.0,4.0,18.1,DC,2024
+MATCH 25,"Wankhede Stadium, Mumbai","APR, THU 11",7:30 pm IST,MI,199.0,3.0,15.3,RCB,196.0,8.0,20.0,MI,2024
+MATCH 24,"Sawai Mansingh Stadium, Jaipur","APR, WED 10",7:30 pm IST,RR,196.0,3.0,20.0,GT,199.0,7.0,20.0,GT,2024
+MATCH 23,"PCA New Stadium, Mullanpur","APR, TUE 9",7:30 pm IST,PBKS,180.0,6.0,20.0,SRH,182.0,9.0,20.0,SRH,2024
+MATCH 22,"MA Chidambaram Stadium, Chennai","APR, MON 8",7:30 pm IST,CSK,141.0,3.0,17.4,KKR,137.0,9.0,20.0,CSK,2024
+MATCH 21,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SUN 7",7:30 pm IST,LSG,163.0,5.0,20.0,GT,130.0,10.0,18.5,LSG,2024
+MATCH 20,"Wankhede Stadium, Mumbai","APR, SUN 7",3:30 pm IST,MI,234.0,5.0,20.0,DC,205.0,8.0,20.0,MI,2024
+MATCH 19,"Sawai Mansingh Stadium, Jaipur","APR, SAT 6",7:30 pm IST,RR,189.0,4.0,19.1,RCB,183.0,3.0,20.0,RR,2024
+MATCH 18,"Rajiv Gandhi International Stadium, Hyderabad","APR, FRI 5",7:30 pm IST,SRH,166.0,4.0,18.1,CSK,165.0,5.0,20.0,SRH,2024
+MATCH 17,"Narendra Modi Stadium, Ahmedabad","APR, THU 4",7:30 pm IST,GT,199.0,4.0,20.0,PBKS,200.0,7.0,19.5,PBKS,2024
+MATCH 16,"Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam","APR, WED 3",7:30 pm IST,DC,166.0,10.0,17.2,KKR,272.0,7.0,20.0,KKR,2024
+MATCH 15,"M Chinnaswamy Stadium, Bengaluru","APR, TUE 2",7:30 pm IST,RCB,153.0,10.0,19.4,LSG,181.0,5.0,20.0,LSG,2024
+MATCH 14,"Wankhede Stadium, Mumbai","APR, MON 1",7:30 pm IST,MI,125.0,9.0,20.0,RR,127.0,4.0,15.3,RR,2024
+MATCH 13,"Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam","MAR, SUN 31",7:30 pm IST,DC,191.0,5.0,20.0,CSK,171.0,6.0,20.0,DC,2024
+MATCH 12,"Narendra Modi Stadium, Ahmedabad","MAR, SUN 31",3:30 pm IST,GT,168.0,3.0,19.1,SRH,162.0,8.0,20.0,GT,2024
+MATCH 11,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAR, SAT 30",7:30 pm IST,LSG,199.0,8.0,20.0,PBKS,178.0,5.0,20.0,LSG,2024
+MATCH 10,"M Chinnaswamy Stadium, Bengaluru","MAR, FRI 29",7:30 pm IST,RCB,182.0,6.0,20.0,KKR,186.0,3.0,16.5,KKR,2024
+MATCH 9,"Sawai Mansingh Stadium, Jaipur","MAR, THU 28",7:30 pm IST,RR,185.0,5.0,20.0,DC,173.0,5.0,20.0,RR,2024
+MATCH 8,"Rajiv Gandhi International Stadium, Hyderabad","MAR, WED 27",7:30 pm IST,SRH,277.0,3.0,20.0,MI,246.0,5.0,20.0,SRH,2024
+MATCH 7,"MA Chidambaram Stadium, Chennai","MAR, TUE 26",7:30 pm IST,CSK,206.0,6.0,20.0,GT,143.0,8.0,20.0,CSK,2024
+MATCH 6,"M Chinnaswamy Stadium, Bengaluru","MAR, MON 25",7:30 pm IST,RCB,178.0,6.0,19.2,PBKS,176.0,6.0,20.0,RCB,2024
+MATCH 5,"Narendra Modi Stadium, Ahmedabad","MAR, SUN 24",7:30 pm IST,GT,168.0,6.0,20.0,MI,162.0,9.0,20.0,GT,2024
+MATCH 4,"Sawai Mansingh Stadium, Jaipur","MAR, SUN 24",3:30 pm IST,RR,193.0,4.0,20.0,LSG,173.0,6.0,20.0,RR,2024
+MATCH 3,"Eden Gardens, Kolkata","MAR, SAT 23",7:30 pm IST,KKR,208.0,7.0,20.0,SRH,204.0,7.0,20.0,KKR,2024
+MATCH 2,"PCA New Stadium, Mullanpur","MAR, SAT 23",3:30 pm IST,PBKS,177.0,6.0,19.2,DC,174.0,9.0,20.0,PBKS,2024
+MATCH 1,"MA Chidambaram Stadium, Chennai","MAR, FRI 22",8:00 pm IST,CSK,176.0,4.0,18.4,RCB,173.0,6.0,20.0,CSK,2024

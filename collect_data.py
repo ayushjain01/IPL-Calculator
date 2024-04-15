@@ -80,12 +80,16 @@ options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=service, options=options)
 url1 = 'https://www.iplt20.com/matches/results/2022'
 url2 = 'https://www.iplt20.com/matches/results/2023'
+url3 = 'https://www.iplt20.com/matches/results/2024'
+
 data = []
 teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
          "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "ROYAL CHALLENGERS BANGALORE":"RCB"}
 
 get_data(url1, 2022, data)
 get_data(url2, 2023, data)
+get_data(url3, 2024, data)
+
 df = pd.DataFrame(data, columns=['match', 'venue', 'date', 'time', 'team1', 'team1_score', 'team1_wickets',
                   'team1_overs', 'team2', 'team2_score', 'team2_wickets', 'team2_overs', "winner", "year"])
 
