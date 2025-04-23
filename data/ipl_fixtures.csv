@@ -1,41 +1,30 @@
 match,venue,date,time,team1,team2,year
-MATCH 31,"Eden Gardens, Kolkata","APR, TUE 16",7:30 pm IST,KKR,RR,2023
-MATCH 32,"Narendra Modi Stadium, Ahmedabad","APR, WED 17",7:30 pm IST,GT,DC,2023
-MATCH 33,"PCA New Stadium, Mullanpur","APR, THU 18",7:30 pm IST,PBKS,MI,2023
-MATCH 34,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, FRI 19",7:30 pm IST,LSG,CSK,2023
-MATCH 35,"Arun Jaitley Stadium, Delhi","APR, SAT 20",7:30 pm IST,DC,SRH,2023
-MATCH 36,"Eden Gardens, Kolkata","APR, SUN 21",3:30 pm IST,KKR,RCB,2023
-MATCH 37,"PCA New Stadium, Mullanpur","APR, SUN 21",7:30 pm IST,PBKS,GT,2023
-MATCH 38,"Sawai Mansingh Stadium, Jaipur","APR, MON 22",7:30 pm IST,RR,MI,2023
-MATCH 39,"MA Chidambaram Stadium, Chennai","APR, TUE 23",7:30 pm IST,CSK,LSG,2023
-MATCH 40,"Arun Jaitley Stadium, Delhi","APR, WED 24",7:30 pm IST,DC,GT,2023
-MATCH 41,"Rajiv Gandhi International Stadium, Hyderabad","APR, THU 25",7:30 pm IST,SRH,RCB,2023
-MATCH 42,"Eden Gardens, Kolkata","APR, FRI 26",7:30 pm IST,KKR,PBKS,2023
-MATCH 43,"Arun Jaitley Stadium, Delhi","APR, SAT 27",3:30 pm IST,DC,MI,2023
-MATCH 44,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, SAT 27",7:30 pm IST,LSG,RR,2023
-MATCH 45,"Narendra Modi Stadium, Ahmedabad","APR, SUN 28",3:30 pm IST,GT,RCB,2023
-MATCH 46,"MA Chidambaram Stadium, Chennai","APR, SUN 28",7:30 pm IST,CSK,SRH,2023
-MATCH 47,"Eden Gardens, Kolkata","APR, MON 29",7:30 pm IST,KKR,DC,2023
-MATCH 48,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","APR, TUE 30",7:30 pm IST,LSG,MI,2023
-MATCH 49,"MA Chidambaram Stadium, Chennai","MAY, WED 1",7:30 pm IST,CSK,PBKS,2023
-MATCH 50,"Rajiv Gandhi International Stadium, Hyderabad","MAY, THU 2",7:30 pm IST,SRH,RR,2023
-MATCH 51,"Wankhede Stadium, Mumbai","MAY, FRI 3",7:30 pm IST,MI,KKR,2023
-MATCH 52,"M Chinnaswamy Stadium, Bengaluru","MAY, SAT 4",7:30 pm IST,RCB,GT,2023
-MATCH 53,"Himachal Pradesh Cricket Association Stadium, Dharamsala","MAY, SUN 5",3:30 pm IST,PBKS,CSK,2023
-MATCH 54,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, SUN 5",7:30 pm IST,LSG,KKR,2023
-MATCH 55,"Wankhede Stadium, Mumbai","MAY, MON 6",7:30 pm IST,MI,SRH,2023
-MATCH 56,"Arun Jaitley Stadium, Delhi","MAY, TUE 7",7:30 pm IST,DC,RR,2023
-MATCH 57,"Rajiv Gandhi International Stadium, Hyderabad","MAY, WED 8",7:30 pm IST,SRH,LSG,2023
-MATCH 58,"Himachal Pradesh Cricket Association Stadium, Dharamsala","MAY, THU 9",7:30 pm IST,PBKS,RCB,2023
-MATCH 59,"Narendra Modi Stadium, Ahmedabad","MAY, FRI 10",7:30 pm IST,GT,CSK,2023
-MATCH 60,"Eden Gardens, Kolkata","MAY, SAT 11",7:30 pm IST,KKR,MI,2023
-MATCH 61,"MA Chidambaram Stadium, Chennai","MAY, SUN 12",3:30 pm IST,CSK,RR,2023
-MATCH 62,"M Chinnaswamy Stadium, Bengaluru","MAY, SUN 12",7:30 pm IST,RCB,DC,2023
-MATCH 63,"Narendra Modi Stadium, Ahmedabad","MAY, MON 13",7:30 pm IST,GT,KKR,2023
-MATCH 64,"Arun Jaitley Stadium, Delhi","MAY, TUE 14",7:30 pm IST,DC,LSG,2023
-MATCH 65,"Barsapara Cricket Stadium, Guwahati","MAY, WED 15",7:30 pm IST,RR,PBKS,2023
-MATCH 66,"Rajiv Gandhi International Stadium, Hyderabad","MAY, THU 16",7:30 pm IST,SRH,GT,2023
-MATCH 67,"Wankhede Stadium, Mumbai","MAY, FRI 17",7:30 pm IST,MI,LSG,2023
-MATCH 68,"M Chinnaswamy Stadium, Bengaluru","MAY, SAT 18",7:30 pm IST,RCB,CSK,2023
-MATCH 69,"Rajiv Gandhi International Stadium, Hyderabad","MAY, SUN 19",3:30 pm IST,SRH,PBKS,2023
-MATCH 70,"Barsapara Cricket Stadium, Guwahati","MAY, SUN 19",7:30 pm IST,RR,KKR,2023
+MATCH 42,"M Chinnaswamy Stadium, Bengaluru","APR, THU 24",7:30 pm IST,ROYAL CHALLENGERS BENGALURU,RAJASTHAN ROYALS,2023
+MATCH 43,"MA Chidambaram Stadium, Chennai","APR, FRI 25",7:30 pm IST,CHENNAI SUPER KINGS,SUNRISERS HYDERABAD,2023
+MATCH 44,"Eden Gardens, Kolkata","APR, SAT 26",7:30 pm IST,KOLKATA KNIGHT RIDERS,PUNJAB KINGS,2023
+MATCH 45,"Wankhede Stadium, Mumbai","APR, SUN 27",3:30 pm IST,MUMBAI INDIANS,LUCKNOW SUPER GIANTS,2023
+MATCH 46,"Arun Jaitley Stadium, Delhi","APR, SUN 27",7:30 pm IST,DELHI CAPITALS,ROYAL CHALLENGERS BENGALURU,2023
+MATCH 47,"Sawai Mansingh Stadium, Jaipur","APR, MON 28",7:30 pm IST,RAJASTHAN ROYALS,GUJARAT TITANS,2023
+MATCH 48,"Arun Jaitley Stadium, Delhi","APR, TUE 29",7:30 pm IST,DELHI CAPITALS,KOLKATA KNIGHT RIDERS,2023
+MATCH 49,"MA Chidambaram Stadium, Chennai","APR, WED 30",7:30 pm IST,CHENNAI SUPER KINGS,PUNJAB KINGS,2023
+MATCH 50,"Sawai Mansingh Stadium, Jaipur","MAY, THU 1",7:30 pm IST,RAJASTHAN ROYALS,MUMBAI INDIANS,2023
+MATCH 51,"Narendra Modi Stadium, Ahmedabad","MAY, FRI 2",7:30 pm IST,GUJARAT TITANS,SUNRISERS HYDERABAD,2023
+MATCH 52,"M Chinnaswamy Stadium, Bengaluru","MAY, SAT 3",7:30 pm IST,ROYAL CHALLENGERS BENGALURU,CHENNAI SUPER KINGS,2023
+MATCH 53,"Eden Gardens, Kolkata","MAY, SUN 4",3:30 pm IST,KOLKATA KNIGHT RIDERS,RAJASTHAN ROYALS,2023
+MATCH 54,"Himachal Pradesh Cricket Association Stadium, Dharamshala","MAY, SUN 4",7:30 pm IST,PUNJAB KINGS,LUCKNOW SUPER GIANTS,2023
+MATCH 55,"Rajiv Gandhi International Stadium, Hyderabad","MAY, MON 5",7:30 pm IST,SUNRISERS HYDERABAD,DELHI CAPITALS,2023
+MATCH 56,"Wankhede Stadium, Mumbai","MAY, TUE 6",7:30 pm IST,MUMBAI INDIANS,GUJARAT TITANS,2023
+MATCH 57,"Eden Gardens, Kolkata","MAY, WED 7",7:30 pm IST,KOLKATA KNIGHT RIDERS,CHENNAI SUPER KINGS,2023
+MATCH 58,"Himachal Pradesh Cricket Association Stadium, Dharamshala","MAY, THU 8",7:30 pm IST,PUNJAB KINGS,DELHI CAPITALS,2023
+MATCH 59,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, FRI 9",7:30 pm IST,LUCKNOW SUPER GIANTS,ROYAL CHALLENGERS BENGALURU,2023
+MATCH 60,"Rajiv Gandhi International Stadium, Hyderabad","MAY, SAT 10",7:30 pm IST,SUNRISERS HYDERABAD,KOLKATA KNIGHT RIDERS,2023
+MATCH 61,"Himachal Pradesh Cricket Association Stadium, Dharamshala","MAY, SUN 11",3:30 pm IST,PUNJAB KINGS,MUMBAI INDIANS,2023
+MATCH 62,"Arun Jaitley Stadium, Delhi","MAY, SUN 11",7:30 pm IST,DELHI CAPITALS,GUJARAT TITANS,2023
+MATCH 63,"MA Chidambaram Stadium, Chennai","MAY, MON 12",7:30 pm IST,CHENNAI SUPER KINGS,RAJASTHAN ROYALS,2023
+MATCH 64,"M Chinnaswamy Stadium, Bengaluru","MAY, TUE 13",7:30 pm IST,ROYAL CHALLENGERS BENGALURU,SUNRISERS HYDERABAD,2023
+MATCH 65,"Narendra Modi Stadium, Ahmedabad","MAY, WED 14",7:30 pm IST,GUJARAT TITANS,LUCKNOW SUPER GIANTS,2023
+MATCH 66,"Wankhede Stadium, Mumbai","MAY, THU 15",7:30 pm IST,MUMBAI INDIANS,DELHI CAPITALS,2023
+MATCH 67,"Sawai Mansingh Stadium, Jaipur","MAY, FRI 16",7:30 pm IST,RAJASTHAN ROYALS,PUNJAB KINGS,2023
+MATCH 68,"M Chinnaswamy Stadium, Bengaluru","MAY, SAT 17",7:30 pm IST,ROYAL CHALLENGERS BENGALURU,KOLKATA KNIGHT RIDERS,2023
+MATCH 69,"Narendra Modi Stadium, Ahmedabad","MAY, SUN 18",3:30 pm IST,GUJARAT TITANS,CHENNAI SUPER KINGS,2023
+MATCH 70,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","MAY, SUN 18",7:30 pm IST,LUCKNOW SUPER GIANTS,SUNRISERS HYDERABAD,2023
