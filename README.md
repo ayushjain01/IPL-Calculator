@@ -38,7 +38,7 @@ The NRR range shows where the team's net run rate landed in the middle 80% of th
 2. The points table updates after every pick.
 3. Click another option to change the result, or click the selected option again to undo it.
 
-Use **Reset all picks** to start again. Picks last up to eight hours in your browser session. Restarting the app clears them. Computer predictions run separately and do not use these picks.
+Use **Reset all picks** to start again. Picks last up to eight hours. Restarting the local app clears them; the hosted version keeps them in a signed browser cookie. Computer predictions run separately and do not use these picks.
 
 ## Which season am I looking at?
 
@@ -119,7 +119,7 @@ To run the checks:
 python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-For deployment, use hosting that can run Python. The local server is intended for running the project on your own computer; a public deployment needs an appropriate production server setup.
+The local app uses Python’s built-in libraries. Render uses Flask and Gunicorn from `requirements.txt`. To run the hosted-app tests locally, install these dependencies with `python -m pip install -r requirements.txt` before running the checks. Without them, the Render-specific tests are skipped.
 
 ## Contributing
 

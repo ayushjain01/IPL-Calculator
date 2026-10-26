@@ -68,3 +68,9 @@ Checks cover actual fixtures and results, future-data exclusion, legal balls, al
 The active application uses `server.py`, `model.py`, `templates/`, `app.css` and the saved data. Deployment requires a Python-capable host; static-only hosting cannot execute the calculations.
 
 MIT — see [LICENSE.txt](LICENSE.txt). Created by [Ayush Jain](https://github.com/ayushjain01). Not affiliated with the IPL.
+
+## Render hosting
+
+`app.py` exposes the shared pages and model through Flask. `render.yaml` starts Gunicorn on `0.0.0.0:$PORT` and configures `/healthz`. The local entry point remains `server.py`. See the README for deployment steps.
+
+Hosted manual picks are saved in a signed, HTTP-only browser cookie with an eight-hour lifetime. On Render the cookie is marked Secure. `SECRET_KEY` is required on Render, and must be shared across workers and preserved across deploys. Sessions are scoped to the replay dataset. Posted forms require a session-specific CSRF token; pick submissions redirect to avoid duplicate changes on refresh. Render hostnames and optional `ALLOWED_HOSTS` entries are trusted explicitly. No database is needed for these small per-browser picks.
