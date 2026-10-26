@@ -27,10 +27,17 @@ class BrowserContractTests(unittest.TestCase):
         _,headers,body=self.request('GET','/predict.html')
         cookie=headers['Set-Cookie'].split(';')[0];token=re.search('name="csrf" value="([^"]+)',body).group(1)
         match=REPLAY['remaining'][0]
-        fields={'csrf':token,'team':'RCB','action':'update','pick_'+match['id']:match['teams'][0]}
+        fields={'csrf':token,'pick':match['id']+':'+match['teams'][0]}
         status,_,body=self.request('POST','/predict.html',fields,cookie)
         self.assertEqual(status,200);self.assertIn('1 of 30 matches predicted',body)
         _,_,body=self.request('GET','/predict.html',cookie=cookie);self.assertIn('1 of 30 matches predicted',body)
+        self.assertNotIn('<select',body)
+        self.assertNotIn('Update points table',body)
+        second=REPLAY['remaining'][1]
+        status,_,body=self.request('POST','/predict.html',dict(csrf=token,pick=second['id']+':NR'),cookie)
+        self.assertEqual(status,200);self.assertIn('2 of 30 matches predicted',body)
+        status,_,body=self.request('POST','/predict.html',dict(csrf=token,pick=second['id']+':NR'),cookie)
+        self.assertEqual(status,200);self.assertIn('1 of 30 matches predicted',body)
         status,_,body=self.request('POST','/calculate.html',dict(csrf=token,team='RCB',count='1000'),cookie)
         self.assertEqual(status,200);self.assertIn('1,000 simulated seasons',body)
         _,_,body=self.request('GET','/predict.html',cookie=cookie);self.assertIn('1 of 30 matches predicted',body)

@@ -24,7 +24,7 @@ def table_html(rows,team):
     return html+'</tbody></table></div><p class="small">A win earns 2 points. A no result or an unresolved tie earns 1 point each. Teams with equal points are separated by wins, then NRR. <details><summary>What do the table headings mean?</summary><p>P: played · W: wins · L: losses · NR: no results · T: unresolved ties · PTS: points. NRR (net run rate) compares how quickly a team scores with how quickly it concedes runs. A higher NRR is better. Exact ties use team name as a final fallback in this replay.</p></details></p>'
 
 def banner():
-    return f'<p class="notice"><strong>Try the {REPLAY["season"]} season from match {REPLAY["cutoff"]}.</strong> We start with the real scores from 28 April 2026. Explore what could happen in the 30 matches left at that point. The season has already finished; this is a replay.</p>'
+    return f'<p class="notice"><strong>Try the {REPLAY["season"]} season from match {REPLAY["cutoff"]}.</strong> This tool starts with the real scores from 28 April 2026. Explore what could happen in the 30 matches left at that point. The season has already finished; this is a replay.</p>'
 
 def team_select(team):
     return '<label>Your team <select name="team">'+''.join(f'<option {"selected" if t==team else ""}>{t}</option>' for t in REPLAY['teams'])+'</select></label>'
@@ -59,16 +59,16 @@ def score_text(innings):
     return ' · '.join(f'{safe(x["team"])} {x["runs"]} off {overs(x["nrr_balls"])} overs' for x in innings)
 
 def manual(session,message=''):
-    picks=session['picks'];team=session.get('team','RCB')
-    content='<h1>Manual predictions</h1>'+banner()+'<p>Pick winners for any of the matches below, then click Update points table. You can change your picks and update again whenever you like.</p>'
+    picks=session['picks'];team=None
+    content='<h1>Manual predictions</h1>'+banner()+'<p>Pick a winner or No result. The points table updates after every pick. Click a selected option again to clear it.</p>'
     if message:content+=f'<p role="status">{safe(message)}</p>'
-    content+=f'<form method="post" action="/predict.html">{token_field(session)}<div class="controls">{team_select(team)}<button class="button" name="action" value="update">Update points table</button><button class="button" name="action" value="reset">Reset all picks</button></div><p><strong>{len(picks)} of {len(REPLAY["remaining"])} matches predicted</strong></p><div class="workspace-grid"><section><h2>Remaining fixtures</h2>'
+    content+=f'<form method="post" action="/predict.html">{token_field(session)}<button class="button" name="action" value="reset">Reset all picks</button></form><p><strong>{len(picks)} of {len(REPLAY["remaining"])} matches predicted</strong></p><div class="workspace-grid"><section><h2>Remaining fixtures</h2>'
     for m in REPLAY['remaining']:
         a,b=m['teams'];pick=picks.get(m['id'],'')
-        content+=f'<div class="fixture"><h3>{team_logo(a)} {a} vs {b} {team_logo(b)}</h3><p class="small">Match {m["number"]} · {m["date"]}<br>{safe(m["venue"])}</p><label for="match-{m["id"]}">Predicted result</label><select id="match-{m["id"]}" name="pick_{m["id"]}">'
-        for value,label in [('', 'Not predicted'),(a,a+' win'),(b,b+' win'),('NR','No result')]:
-            content+=f'<option value="{value}" {"selected" if pick==value else ""}>{label}</option>'
-        content+='</select>'
+        content+=f'<div class="fixture" id="match-{m["id"]}"><h3>{team_logo(a)} {a} vs {b} {team_logo(b)}</h3><p class="small">Match {m["number"]} · {m["date"]}<br>{safe(m["venue"])}</p><form method="post" action="/predict.html#match-{m["id"]}">{token_field(session)}<div class="pick-group" role="group" aria-label="Result for {a} versus {b}">'
+        for value,label in [(a,a+' win'),(b,b+' win'),('NR','No result')]:
+            content+=f'<button type="submit" class="pick {"active" if pick==value else ""}" data-winner="{value}" name="pick" value="{m["id"]}:{value}" aria-pressed="{str(pick==value).lower()}">{label}</button>'
+        content+='</div></form>'
         if pick and pick!='NR':
             pool,weights=score_pools(REPLAY['history'],m['venue'])
             innings=sample_score(pool,weights,m['teams'],pick,random.Random(m['id']+pick))
@@ -77,18 +77,18 @@ def manual(session,message=''):
     content+='</section><section><h2>Projected standings</h2>'+table_html(manual_table(REPLAY,picks),team)
     if len(picks)==len(REPLAY['remaining']):
         content+='<p><strong>Your projected top four: '+', '.join(r['team'] for r in manual_table(REPLAY,picks)[:4])+'.</strong></p>'
-    content+='<p class="small">NRR needs a score as well as a winner, so we use an example from a past match for each pick. It stays the same when you refresh. Choose Not predicted to undo a pick, or Reset all picks to start again. Picks last up to 8 hours and are cleared when the app restarts.</p><p><a href="/model.html">How the predictions and NRR work</a></p></section></div><button class="button" name="action" value="update">Update points table</button></form>'
+    content+='<p class="small">NRR needs a score as well as a winner, so this tool uses an example from a past match for each pick. It stays the same when you refresh. Click a selected option again to undo a pick, or Reset all picks to start again. Picks last up to 8 hours and are cleared when the app restarts.</p><p><a href="/model.html">How the predictions and NRR work</a></p></section></div>'
     return render('Manual predictions',content)
 
 def model_page():
     source=REPLAY['source'];report=REPLAY['model']['report'];metrics=report['evaluation']
     content='<h1>How it works</h1>'+banner()
-    content+='<h2>What are we trying to find out?</h2><p>Which teams could finish in the top four? We take the real points table after match 40, then try different results for the games that were still to come.</p>'
+    content+='<h2>What does this tool show?</h2><p>Which teams could finish in the top four? This tool takes the real points table after match 40, then tries different results for the games that were still to come.</p>'
     content+='<h2>How does the computer choose a winner?</h2><p>Each team has a strength rating based on its past results. Winning raises that rating; losing lowers it. This method is called Elo. A stronger team gets a higher chance of winning, but an upset is always possible.</p><p>The computer plays out the remaining fixtures many times. A team’s top-four percentage tells you how often it qualified in those possible endings. It does not mean the real season will follow that result.</p>'
-    content+=f'<h2>How much data does it use?</h2><p>We downloaded {source["matches"]:,} IPL match records from <a href="https://cricsheet.org/downloads/">Cricsheet</a>. The ratings use {source["history_matches"]:,} records across 19 seasons, from April 2008 to 28 April 2026. Only the first 40 matches of 2026 are included, so the computer cannot see the answers to the remaining games.</p>'
-    content+=f'<h2>How accurate is it?</h2><p><strong>It is still experimental.</strong> We tested it on {metrics["matches"]} decided matches from 2024 and 2025. It picked the winner correctly {metrics["accuracy"]:.1%} of the time. Its probability estimates did no better than giving each team a 50% chance. Treat the results as a way to explore possibilities, rather than a dependable forecast.</p><p>It does not account for injuries, playing elevens, the toss or weather. Using more possible endings makes the calculation steadier, but does not fix those limits.</p>'
-    content+='<h2>What is NRR?</h2><p>Net run rate (NRR) compares how quickly a team scores with how quickly its opponents score against it. Higher is better. For example, scoring at 9 runs per over while conceding 8 gives an NRR of +1.000. The season figure uses totals across the matches that count, rather than averaging each match’s NRR.</p><p>For matches already played, we use actual runs and balls. For your predicted matches, the scores are unknown. We borrow example scores and chase lengths from past IPL games to estimate the effect on NRR. These are possible scores, not predictions of exact totals.</p>'
-    content+='<h2>What happens in manual mode?</h2><p>You choose the winner or No result, then update the table. A win gives 2 points; No result gives each team 1 point without changing NRR. You can leave some matches unpicked, change a pick, or reset everything. Computer mode runs separately and does not use your manual picks.</p>'
+    content+=f'<h2>How much data does it use?</h2><p>This tool uses {source["matches"]:,} IPL match records from <a href="https://cricsheet.org/downloads/">Cricsheet</a>. The ratings use {source["history_matches"]:,} records across 19 seasons, from April 2008 to 28 April 2026. Only the first 40 matches of 2026 are included, so the computer cannot see the answers to the remaining games.</p>'
+    content+=f'<h2>How accurate is it?</h2><p><strong>It is still experimental.</strong> This tool was tested on {metrics["matches"]} decided matches from 2024 and 2025. It picked the winner correctly {metrics["accuracy"]:.1%} of the time. Its probability estimates did no better than giving each team a 50% chance. Treat the results as a way to explore possibilities, rather than a dependable forecast.</p><p>It does not account for injuries, playing elevens, the toss or weather. Using more possible endings makes the calculation steadier, but does not fix those limits.</p>'
+    content+='<h2>What is NRR?</h2><p>Net run rate (NRR) compares how quickly a team scores with how quickly its opponents score against it. Higher is better. For example, scoring at 9 runs per over while conceding 8 gives an NRR of +1.000. The season figure uses totals across the matches that count, rather than averaging each match’s NRR.</p><p>For matches already played, this tool uses actual runs and balls. For your predicted matches, the scores are unknown. This tool borrows example scores and chase lengths from past IPL games to estimate the effect on NRR. These are possible scores, not predictions of exact totals.</p>'
+    content+='<h2>What happens in manual mode?</h2><p>You choose the winner or No result, and the table updates after each pick. A win gives 2 points; No result gives each team 1 point without changing NRR. You can leave some matches unpicked, change a pick, or reset everything. Computer mode runs separately and does not use your manual picks.</p>'
     content+=f'<details><summary>Technical details and data sources</summary><p>Elo starts at 1500, uses an update rate of {report["parameters"]["k"]}, and moves ratings halfway back toward 1500 between seasons. Settings were selected using 2022–2023. Testing on 2024–2025 predicted each game before learning its result.</p><p>Brier score: {metrics["brier"]:.4f} versus 0.2500 for equal chances. Log loss: {metrics["log_loss"]:.4f} versus 0.6931. These measure the quality of probability estimates; lower is better.</p><p>Future scores come from ordinary 20-over games from 2018 onward, before the replay date. Recent matches and matching venues get more weight. Ratings stay fixed during each possible season ending. Seed 26 keeps identical runs repeatable. NRR ranges show the 10th to 90th percentiles, and have not been checked for forecast accuracy.</p><p>NRR uses legal balls; wides and no-balls add runs without adding legal balls. All-out innings use the full allowed overs. No-result matches and Super Over scores do not count toward NRR. A Super Over winner still gets the match points. Completed revised-target DLS chases use the revised target minus one for the first team; early-terminated rain-affected games need verified extra information and are flagged if unavailable. None occur in this starting table.</p><p><a href="/data/SOURCE.md">Data source and license</a> · <a href="/data/model-report.json">Full test results</a> · <a href="https://cricsheet.org/format/json/">Cricsheet data format</a> · <a href="https://documents.iplt20.com/bcci/documents/1742707993986_Match_Playing_Conditions.pdf">IPL playing conditions</a></p></details>'
     return render('How it works',content)
 
@@ -142,20 +142,21 @@ class Handler(BaseHTTPRequestHandler):
             get=lambda name,default='':values.get(name,[default])[0]
             session,cookie=self.session()
             if not secrets.compare_digest(get('csrf'),session['csrf']):return self.reply(403,b'Form expired. Reload the page and try again.','text/plain',cookie)
-            team=get('team','RCB')
-            if team not in REPLAY['teams']:raise ValueError('Unknown team')
-            session['team']=team
             if path=='/calculate.html':
+                team=get('team','RCB')
+                if team not in REPLAY['teams']:raise ValueError('Unknown team')
+                session['team']=team
                 count=int(get('count','2000'))
                 body=computer(session,simulate(REPLAY,count),count)
             else:
                 if get('action')=='reset':session['picks']={}
                 else:
-                    picks={}
-                    for m in REPLAY['remaining']:
-                        pick=get('pick_'+m['id'])
-                        if pick and pick not in m['teams']+['NR']:raise ValueError('Invalid match pick')
-                        if pick:picks[m['id']]=pick
+                    match_id,separator,pick=get('pick').partition(':')
+                    match=next((m for m in REPLAY['remaining'] if m['id']==match_id),None)
+                    if not separator or not match or pick not in match['teams']+['NR']:raise ValueError('Invalid match pick')
+                    picks=dict(session['picks'])
+                    if picks.get(match_id)==pick:picks.pop(match_id)
+                    else:picks[match_id]=pick
                     session['picks']=picks
                 body=manual(session,'Points table updated.' if get('action')!='reset' else 'All picks reset.')
             self.reply(200,body,cookie=cookie)

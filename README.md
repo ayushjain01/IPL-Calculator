@@ -1,4 +1,4 @@
-# IPL Calculator — Will my team qualify?
+# IPL Calculator - Will my team qualify?
 
 Explore how different match results could change the IPL points table. Let the computer try possible endings to a season, or pick the winners yourself.
 
@@ -34,11 +34,11 @@ The NRR range shows where the team's net run rate landed in the middle 80% of th
 
 ### Manual predictions
 
-1. Choose winners for any of the remaining matches. Choose **No result** to try a washout.
-2. Click **Update points table** to see the effect.
-3. Change your picks and update again to try another outcome.
+1. Click either team’s win button, or **No result** to try a washout.
+2. The points table updates after every pick.
+3. Click another option to change the result, or click the selected option again to undo it.
 
-Choose **Not predicted** to undo one pick, or **Reset all picks** to start again. Picks last up to eight hours in your browser session. Restarting the app clears them. Computer predictions run separately and do not use these picks.
+Use **Reset all picks** to start again. Picks last up to eight hours in your browser session. Restarting the app clears them. Computer predictions run separately and do not use these picks.
 
 ## Which season am I looking at?
 
@@ -46,7 +46,7 @@ IPL 2026 has finished, and RCB won back to back. The homepage has a link to reli
 
 For now, the calculator lets you go back to **28 April 2026, after match 40**. It starts with the actual points table and scores from then. You can explore different results for the **30 league matches still to come at that point**.
 
-This is a historical replay, not a live forecast. Although we know how the season ended, those later scores and results are kept out of the prediction model.
+This is a historical replay, not a live forecast. Although the season has finished, those later scores and results are kept out of the prediction model.
 
 ## How do the predictions work?
 
