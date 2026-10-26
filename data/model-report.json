@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "k": 12,
+    "carry": 0.5,
+    "scale": 400
+  },
+  "development_seasons": [
+    "2022",
+    "2023"
+  ],
+  "evaluation_seasons": [
+    "2024",
+    "2025"
+  ],
+  "evaluation": {
+    "matches": 142,
+    "brier": 0.2535898848760889,
+    "log_loss": 0.7004039093702593,
+    "accuracy": 0.49295774647887325
+  },
+  "coin_flip_brier": 0.25,
+  "coin_flip_log_loss": 0.6931471805599453,
+  "protocol": "Walk-forward: predict before every match, then update using its result. Hyperparameters selected on 2022\u20132023 only."
+}

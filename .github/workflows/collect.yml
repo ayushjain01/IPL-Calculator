@@ -2,10 +2,9 @@
 name: collect
 #Runs At 10:00 on everyday of May
 on:
-  schedule:
-    - cron: "0 10,21 1-21 5 *"   
-    #Use https://crontab.guru/ for cron schedule expression
+  workflow_dispatch:
 
+# Off-season: daily collection will be added after the scraper is modernized.
 #steps to carry out 
 jobs:
   build:

@@ -1,12 +1,2 @@
-pandas>=2.0.0
-numpy>=1.24.0
-pyautogui
-asyncio
-pyppeteer2
-beautifulsoup4>=4.12.0
-selenium>=4.10.0
-webdriver-manager>=4.0.0
-pytest>=7.4.0
-black>=23.7.0
-flake8>=6.1.0
-requests>=2.31.0
+# Python 3.11+ standard library only. No pip installation required.
+# Historical scraping tools use requirements-legacy.txt and are not part of this app.
