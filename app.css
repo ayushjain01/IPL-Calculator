@@ -21,3 +21,5 @@
 .pick:hover{filter:brightness(.92)}.pick.active{outline:3px solid #001030;outline-offset:2px}.pick.active::after{content:" ✓"}.pick[data-winner="NR"]{background:#edf0f5;color:#001030;border-color:#a7b4cc}.pick[data-winner="NR"].active{background:#cbd5e1}.pick:focus-visible{outline:3px solid #001030;outline-offset:3px}
 
 .pick:not(.active){background:#fff;color:#001030;border-color:#a7b4cc}
+
+.desktop-notice{position:fixed;inset:0;margin:auto;width:min(460px,calc(100% - 40px));height:fit-content;max-height:calc(100svh - 40px);overflow:auto;padding:28px;background:#001030;color:#fff;border:1px solid #7187b2;border-radius:6px;box-shadow:0 0 0 100vmax #000b;z-index:1000}.desktop-notice:not([open]){display:none}.desktop-notice h2{margin:0 0 12px;font-size:24px}.desktop-notice p{font-size:16px;margin:0 0 24px}.desktop-notice form{margin:0}
