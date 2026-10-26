@@ -59,7 +59,7 @@ Checks cover actual fixtures and results, future-data exclusion, legal balls, al
 - Reconcile reconstructed standings with the official table and add verified NRR overrides where source details are incomplete, especially early DLS terminations.
 - Validate unique IDs, team names, season, innings totals and bowling allocations before publishing refreshed data.
 - Add an explicit live-season dataset with source, last-successful-update time, stale-data notice and season-specific manual sessions.
-- Add automation later; no scheduled data refresh is enabled now. The old scraper workflow is manual-only and requires modernization.
+- Add automation later; no scheduled data refresh is currently configured.
 
 ## Files and deployment
 

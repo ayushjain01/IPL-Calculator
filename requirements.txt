@@ -1,2 +1,0 @@
-# Python 3.11+ standard library only. No pip installation required.
-# Historical scraping tools use requirements-legacy.txt and are not part of this app.

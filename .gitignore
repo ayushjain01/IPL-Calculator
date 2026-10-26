@@ -1,7 +1,6 @@
-.vercel
-.vscode
-node_modules
-venv
+.vscode/
 __pycache__/
 data/raw/
 *.pyc
+.venv/
+venv/

@@ -107,7 +107,7 @@ This reuses the local archive at `data/raw/ipl_male_json.zip`, or downloads it i
 
 TODO: pull official fixtures **and match results every day**, check them against the official points table, and update the app's data. Show when it was last updated and warn if it is out of date. Keep each season's manual picks separate.
 
-Automation will be added later. The old collection workflow is manual-only, and its scraper needs updating before use.
+Automation will be added later. No daily data-refresh workflow is currently configured.
 
 ## Technical details and checks
 
@@ -120,6 +120,10 @@ python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 For deployment, use hosting that can run Python. The local server is intended for running the project on your own computer; a public deployment needs an appropriate production server setup.
+
+## Contributing
+
+Notice something missing or any room for improvements? Just raise a PR.
 
 ## Sources and license
 
