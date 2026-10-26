@@ -34,6 +34,28 @@ def token_field(session):return f'<input type="hidden" name="csrf" value="{sessi
 def render(title,content):
     return Template((ROOT/'templates/base.html').read_text(encoding='utf-8')).substitute(title=safe(title),content=content).encode('utf-8')
 
+def qualification_message(team, chance):
+    if chance == 0:
+        return f"Sorry, {team} did not qualify in any of these simulated endings.", "No top-four finishes showed up in this run. That does not prove qualification is impossible. Try manual picks to explore another path."
+    if chance < 10:
+        return f"{team} need a big turnaround.", "There is still a slim path to the top four in these simulations. A few results going their way could make a difference."
+    if chance < 40:
+        return f"Keep the faith, {team} fans.", "The odds are against them in this run, but a top-four finish is still possible."
+    if chance <= 60:
+        return f"It could go either way for {team}.", "The playoff race is wide open. Every remaining match could matter."
+    if chance < 90:
+        return f"Looking promising for {team}!", "They reached the top four in most of these simulated endings, but there is still work to do."
+    if chance < 100:
+        return f"{team} are looking strong!", "They qualified in almost every simulated ending. There is still a chance of missing out, so nothing is confirmed."
+    return f"A clean sweep of qualifying outcomes for {team}!", "They reached the top four in every simulated ending in this run. That is encouraging, but it is not a mathematical guarantee."
+
+
+def qualification_notice(team, chance):
+    title, explanation = qualification_message(team, chance)
+    text = f'<p><strong>{chance:.1f}% top-four chance in this run.</strong> {safe(explanation)}</p>'
+    return f'<section class="qualification-summary" aria-label="Your team result">{team_logo(team)}<h2>{safe(title)}</h2>{text}</section><dialog open class="result-notice" aria-labelledby="result-notice-title"><h2 id="result-notice-title">{safe(title)}</h2>{text}<form method="dialog"><button class="button">See results</button></form></dialog>'
+
+
 def computer(session,results=None,count=2000):
     team=session.get('team','RCB')
     content='<h1>Computer predictions</h1>'+banner()
@@ -41,6 +63,8 @@ def computer(session,results=None,count=2000):
     content+='<p class="small"><strong>Still an experiment:</strong> in testing, the model did no better than giving each team an equal chance. Use it to explore possibilities, rather than as a reliable prediction. <a href="/model.html">How it works</a>.</p>'
     content+=f'<form method="post" action="/calculate.html" class="controls">{token_field(session)}{team_select(team)}<label>Possible season endings <select name="count">'+''.join(f'<option value="{n}" {"selected" if n==count else ""}>{n:,}</option>' for n in (1000,2000,5000))+'</select></label><button class="button">Calculate chances</button></form>'
     if results:
+        selected = next(r for r in results if r["team"] == team)
+        content += qualification_notice(team, selected["chance"])
         content+=f'<h2>Chances of finishing in the top four</h2><p class="small">{count:,} simulated seasons. A 70% result means the team reached the top four in about 70 out of every 100 endings the computer tried. More endings give a steadier estimate, not a guarantee. The NRR range covers the middle 80% of those endings; real results can fall outside it.</p><div class="table-scroll"><table><thead><tr><th>TEAM</th><th>TOP-FOUR CHANCE</th><th>POSSIBLE NRR</th></tr></thead><tbody>'
         for r in results:
             content+=f'<tr class="{"selected-team" if r["team"]==team else ""}"><th scope="row"><span class="team-cell">{team_logo(r["team"])}{r["team"]}</span></th><td>{r["chance"]:.1f}%</td><td>{r["nrr_low"]:+.3f} to {r["nrr_high"]:+.3f}</td></tr>'

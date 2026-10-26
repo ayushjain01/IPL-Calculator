@@ -26,7 +26,7 @@ The match data needed to run the app is included. An internet connection is only
 
 1. Choose your team. Its row will be highlighted.
 2. Choose how many possible season endings to try. The default, 2,000, is a good starting point.
-3. Click **Calculate chances**.
+3. Click **Calculate chances**. A popup summarises your selected team’s result, from no qualifying outcomes to qualification in every simulated ending. Close it with **See results** to view the full table.
 
 A result of **70%** means the team finished in the top four in about 70 out of every 100 endings the computer tried. More endings make the estimate steadier; they do not guarantee a better prediction.
 
