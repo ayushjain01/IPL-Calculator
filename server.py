@@ -7,6 +7,7 @@ from string import Template
 import argparse,json,mimetypes,secrets,time,threading
 from model import baseline,ranked,manual_table,simulate,Elo,score_pools,sample_score
 import random
+from seo import metadata, home_html, robots_txt, sitemap_xml
 
 ROOT=Path(__file__).resolve().parent
 REPLAY=json.loads((ROOT/'data/replay.json').read_text(encoding='utf-8'))
@@ -32,7 +33,8 @@ def team_select(team):
 def token_field(session):return f'<input type="hidden" name="csrf" value="{session["csrf"]}">'
 
 def render(title,content):
-    return Template((ROOT/'templates/base.html').read_text(encoding='utf-8')).substitute(title=safe(title),content=content).encode('utf-8')
+    path = {'Computer predictions':'/calculate.html', 'Manual predictions':'/predict.html', 'How it works':'/model.html'}[title]
+    return Template((ROOT/'templates/base.html').read_text(encoding='utf-8')).substitute(title=safe(title),metadata=metadata(path),content=content).encode('utf-8')
 
 def qualification_message(team, chance):
     if chance == 0:
@@ -142,10 +144,12 @@ class Handler(BaseHTTPRequestHandler):
         if not self.valid_host():return self.reply(403,b'Local access only','text/plain')
         path=urlsplit(self.path).path
         if path in ('/','/index.html'):
-            return self.reply(200,(ROOT/'index.html').read_bytes())
+            return self.reply(200,home_html((ROOT/'index.html').read_text(encoding='utf-8')).encode('utf-8'))
         if path in ('/calculate.html','/predict.html'):
             session,cookie=self.session()
             return self.reply(200,computer(session) if path=='/calculate.html' else manual(session),cookie=cookie)
+        if path=='/robots.txt':return self.reply(200,robots_txt().encode('utf-8'),'text/plain; charset=utf-8')
+        if path=='/sitemap.xml':return self.reply(200,sitemap_xml().encode('utf-8'),'application/xml; charset=utf-8')
         if path=='/model.html':return self.reply(200,model_page())
         allowed={'/app.css':ROOT/'app.css','/data/model-report.json':ROOT/'data/model-report.json','/data/SOURCE.md':ROOT/'data/SOURCE.md'}
         if path.startswith('/static/'):

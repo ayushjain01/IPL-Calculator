@@ -4,6 +4,7 @@ import secrets
 
 from flask import Flask, Response, redirect, request, send_file, send_from_directory, session
 from server import ROOT, REPLAY, computer, manual, model_page
+from seo import home_html, robots_txt, sitemap_xml, public_url
 from model import simulate
 
 
@@ -13,7 +14,8 @@ def create_app(config=None):
     secret = os.environ.get('SECRET_KEY')
     if hosted and not secret and not (config and config.get('TESTING')):
         raise RuntimeError('Set SECRET_KEY in Render Environment settings before starting the app.')
-    hosts = ['localhost', '127.0.0.1']
+    from urllib.parse import urlsplit
+    hosts = ['localhost', '127.0.0.1', urlsplit(public_url()).hostname]
     for name in ('RENDER_EXTERNAL_HOSTNAME', 'RENDER_INTERNAL_HOSTNAME'):
         if os.environ.get(name):
             hosts.append(os.environ[name])
@@ -53,12 +55,25 @@ def create_app(config=None):
         response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['Cache-Control'] = 'no-store'
+        if request.method == 'POST' or response.status_code >= 400 or request.path.startswith('/data/') or request.path == '/healthz' or (request.path == '/predict.html' and session.get('picks')):
+            response.headers['X-Robots-Tag'] = 'noindex, follow'
         return response
 
     @app.get('/')
-    @app.get('/index.html')
     def home():
-        return send_file(ROOT / 'index.html')
+        return Response(home_html((ROOT / 'index.html').read_text(encoding='utf-8')), content_type='text/html; charset=utf-8')
+
+    @app.get('/index.html')
+    def home_alias():
+        return redirect('/', code=301)
+
+    @app.get('/robots.txt')
+    def robots():
+        return Response(robots_txt(), content_type='text/plain; charset=utf-8')
+
+    @app.get('/sitemap.xml')
+    def sitemap():
+        return Response(sitemap_xml(), content_type='application/xml; charset=utf-8')
 
     @app.route('/calculate.html', methods=['GET', 'POST'])
     def calculate():

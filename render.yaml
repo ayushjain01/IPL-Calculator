@@ -9,3 +9,5 @@ services:
     envVars:
       - key: SECRET_KEY
         generateValue: true
+      - key: PUBLIC_URL
+        value: https://ipl-calculator-l4co.onrender.com
