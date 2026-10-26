@@ -34,28 +34,28 @@ def get_data(url, year, data):
         date, time = match_data[2].split(" , ")
         cols.append(date)
         cols.append(time)
-        if match_data[3] == "NO RESULT":
-            cols.append(teams[match_data[4]])
+        if match_data[3] == "NO RESULT" or match_data[3] == "MATCH ABANDONED":
+            cols.append(teams[match_data[4].upper()])
             cols.append(None)
             cols.append(None)
             cols.append(None)
             temp_data = match_data[5:]
             for i in temp_data:
-                if i in teams.keys():
+                if i.upper() in teams.keys():
                     break
-            cols.append(teams[i])
+            cols.append(teams[i.upper()])
             cols.append(None)
             cols.append(None)
             cols.append(None)
             cols.append("NR")
         else:
-            cols.append(teams[match_data[4]])
+            cols.append(teams[match_data[4].upper()])
             score, wickets = split_score(match_data[5])
             cols.append(int(score))
             cols.append(int(wickets))
             overs = match_data[6].strip("() OV")
             cols.append(float(overs))
-            cols.append(teams[match_data[7]])
+            cols.append(teams[match_data[7].upper()])
             score, wickets = split_score(match_data[8])
             cols.append(int(score))
             cols.append(int(wickets))
@@ -66,14 +66,13 @@ def get_data(url, year, data):
 
         cols.append(year)
         data.append(cols)
-        print(cols)
         cols = []
 
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
-options.add_argument("--window-size=1920,1200")
+options.add_argument("--window-size=2920,1200")
 DRIVER_PATH = "webdriver\chromedriver.exe"
 service = Service(executable_path=DRIVER_PATH)
 options = webdriver.ChromeOptions()
@@ -81,6 +80,7 @@ driver = webdriver.Chrome(service=service, options=options)
 url1 = 'https://www.iplt20.com/matches/results/2022'
 url2 = 'https://www.iplt20.com/matches/results/2023'
 url3 = 'https://www.iplt20.com/matches/results/2024'
+url4 = 'https://www.iplt20.com/matches/results/2025'
 
 data = []
 teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
@@ -89,6 +89,7 @@ teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CA
 get_data(url1, 2022, data)
 get_data(url2, 2023, data)
 get_data(url3, 2024, data)
+get_data(url4, 2025, data)
 
 df = pd.DataFrame(data, columns=['match', 'venue', 'date', 'time', 'team1', 'team1_score', 'team1_wickets',
                   'team1_overs', 'team2', 'team2_score', 'team2_wickets', 'team2_overs', "winner", "year"])

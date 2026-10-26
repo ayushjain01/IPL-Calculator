@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="A simple tool to predict if your favourite team will qualify for the IPL 2024 playoffs or not." />
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2025 playoffs or not." />
     <meta name="keywords"
-        content="IPL, team qualification, predictor, playoffs, 2024, calculator, RCB, CSK, GT, LSG, KKR, PBKS, MI, SRH, DC, RR, ROYAL CHALLENGERS BENGALURU, Chennai Super Kings, Gujarat Titans, Lucknow Super Giants, Kolkata Knight Riders, Punjab Kings, Mumbai Indians, Sunrisers Hyderabad, Delhi Capitals, Rajasthan Royals" />
+        content="IPL, team qualification, predictor, playoffs, 2025, calculator, RCB, CSK, GT, LSG, KKR, PBKS, MI, SRH, DC, RR" />
     <meta name="author" content="Ayush Jain" />
     <meta property="og:title" content="Will My Team Qualify?" />
     <meta property="og:description"
-        content="A simple tool to predict if your favourite team will qualify for the IPL 2024 playoffs or not." />
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2025 playoffs or not." />
     <meta property="og:image" content="https://i.ibb.co/4sSJS3G/bb.png" />
     <meta property="og:url" content="https://ipl-calculator-ayushjain01.vercel.app/">
     <link rel="shortcut icon" type="image/png" href="/static/favicon.ico" />
@@ -19,18 +19,30 @@
     <meta name="twitter:site" content="@AyushGanna" />
     <meta name="twitter:title" content="Will My Team Qualify?" />
     <meta property="twitter:description"
-        content="A simple tool to predict if your favourite team will qualify for the IPL 2024 playoffs or not." />
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2025 playoffs or not." />
     <meta name="twitter:image" content="https://i.ibb.co/4sSJS3G/bb.png" />
     <meta property="description"
-        content="A simple tool to predict if your favourite team will qualify for the IPL 2024 playoffs or not." />
-    <script defer src="/_vercel/insights/script.js"></script>
+        content="A simple tool to predict if your favourite team will qualify for the IPL 2025 playoffs or not." />
+    <!-- <script defer src="/_vercel/insights/script.js"></script> -->
     <title>Will My Team Qualify?</title>
     <link rel="stylesheet" href="styles/styles3.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"
-        data-pyscript-loading-text="Loading, please wait..."></script>
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <py-config>
+        packages = ["pandas", "numpy"]
+        [[fetch]]
+        from = 'static/teams/'
+        files = ['CSK.png', 'DC.png', 'GT.png',
+        'KKR.png','LSG.png','MI.png','PBKS.png','RCB.png','RR.png','SRH.png']
+        to_folder = 'static/teams'
+        [[fetch]]
+        from = 'data/'
+        files = ['ipl_fixtures.csv', 'ipl_matches.csv','points.csv']
+        to_folder = 'data'
+    </py-config>
 </head>
 
 <body>
@@ -76,28 +88,13 @@
         <div class="button-container">
             <button id="calc-button" class="button">Calculate Chances</button>
         </div>
-        <p style ="font-size: medium;">Note - Results may take a moment to load. Please be patient! Try refreshing the page after every calculation for faster results.😏</p>
+        <p style="font-size: medium;">Note - Results may take a moment to load. Please be patient! Try refreshing the page after every calculation for faster results.😏</p>
         <br>
 
         <p id="results" class="title-para" style="display:none;margin-top:-1%;"></p>
         <center id="copy-content" style="display:none;">
         </center>
     </center>
-    <py-config type="toml">
-        packages = ["pandas"]
-        [[fetch]]
-        from = 'static/teams/'
-        files = ['CSK.png', 'DC.png', 'GT.png',
-        'KKR.png','LSG.png','MI.png','PBKS.png','RCB.png','RR.png','SRH.png']
-        to_folder = 'static/teams'
-        packages = ["pandas"]
-        [[fetch]]
-        files = ['points_table.py']
-        [[fetch]]
-        from = 'data/'
-        files = ['ipl_fixtures.csv', 'ipl_matches.csv','points.csv']
-        to_folder = 'data'
-    </py-config>
     <py-script src="./predict_points.py"></py-script>
 </body>
 <footer>

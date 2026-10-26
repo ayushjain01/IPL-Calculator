@@ -95,8 +95,8 @@ def get_data(url, year, data):
         cols = []
 
 
-url1 = 'https://www.iplt20.com/matches/results/2022'
-url2 = 'https://www.iplt20.com/matches/results/2023'
+url1 = 'https://www.iplt20.com/matches/results/2024'
+url2 = 'https://www.iplt20.com/matches/results/2025'
 data = []
 teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CAPITALS": "DC", "PUNJAB KINGS": "PBKS", "RAJASTHAN ROYALS": "RR",
          "SUNRISERS HYDERABAD": "SRH", "LUCKNOW SUPER GIANTS": "LSG", "CHENNAI SUPER KINGS": "CSK", "KOLKATA KNIGHT RIDERS": "KKR", "MUMBAI INDIANS": "MI", "ROYAL CHALLENGERS BANGALORE":"RCB"}

@@ -9,7 +9,7 @@ import pandas as pd
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.headless = True
-options.add_argument("--window-size=1920,1200")
+options.add_argument("--window-size=1920,2200")
 DRIVER_PATH = "webdriver\chromedriver.exe"
 service = Service(executable_path=DRIVER_PATH)
 options = webdriver.ChromeOptions()
@@ -26,16 +26,16 @@ teams = {"ROYAL CHALLENGERS BENGALURU": "RCB", "GUJARAT TITANS": "GT", "DELHI CA
 for i in fixture_rows:
     cols = []
     match_data = i.text.split("\n")[:8]
-    match_data.pop(7)
     match_data.pop(5)
+    match_data.pop(6)
     cols.append(match_data[0])
     cols.append(match_data[1])
     cols.append(match_data[2])
     cols.append(match_data[3])
     if match_data[4] == "TBD":
         break
-    cols.append(teams[match_data[4]])
-    cols.append(teams[match_data[5]])
+    cols.append(teams[match_data[4].upper()])
+    cols.append(teams[match_data[5].upper()])
     cols.append(2023)
     data.append(cols)
 
